@@ -18,7 +18,7 @@ time = distance / velocity
 
 
 
-Acceleration:
+Acceleration: <- CURRENT
 
 acceleration = velocity change / time
 
