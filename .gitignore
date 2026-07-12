@@ -1,0 +1,13 @@
+#.gitignore
+
+# Build
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# OS junk
+.DS_Store
+Thumbs.db
