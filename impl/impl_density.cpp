@@ -18,5 +18,5 @@ void DensityFormulas::calculateRho(const double mass, const double volume)
 void DensityFormulas::calculateVolume(const double rho, const double mass)
 {
     const double result{safeDivision(mass, rho)};
-    displayResult(rho, mass, result, "Density | Rho", "Mass | m", '/');
+    displayResult(mass, rho, result, "Mass | m", "Density | Rho", '/');
 }

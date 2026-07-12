@@ -14,6 +14,16 @@ T safeDivision(T num1, T num2)
 }
 
 template<typename T>
+T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
+{
+    T delta = finalValue - initialValue;
+    
+    std::cout << "Delta " << valueName << ": " << delta << '\n';
+    
+    return delta;
+}
+
+template<typename T>
 void displayResult(
     const T var1,
     const T var2,
