@@ -16,8 +16,7 @@ T safeDivision(T num1, T num2)
 template<typename T>
 T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
 {
-    T delta = finalValue - initialValue;
-    
+    T delta{finalValue - initialValue};
     std::cout << "Delta " << valueName << ": " << delta << '\n';
     
     return delta;
@@ -25,6 +24,7 @@ T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
 
 template<typename T>
 void displayResult(
+    const std::string& expectedResult,
     const T var1,
     const T var2,
     const T result,
@@ -34,6 +34,6 @@ void displayResult(
 )
 {
     std::cout << var1 << " (" << var1Name << ") " 
-        << op << " " << var2 <<" (" << var2Name << ") = "
-        << result << '\n';
+        << op << " " << var2 << " (" << var2Name << ") = "
+        << result << " (" << expectedResult << ")" << '\n';
 }

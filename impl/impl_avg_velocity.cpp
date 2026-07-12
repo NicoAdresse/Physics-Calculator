@@ -6,17 +6,44 @@
 void AvgVelocityFormulas::calculateVelocity(const double distance, const double time)
 {
     double result{safeDivision(distance, time)};
-    displayResult(distance, time, result, "Distance | d", "Time | t", '/');
+
+    displayResult(
+        "Velocity | v",
+        distance,
+        time,
+        result,
+        "Distance | d",
+        "Time | t",
+        '/'
+    );
 }
 
 void AvgVelocityFormulas::calculateDistance(const double velocity, const double time)
 {
     double result{velocity * time};
-    displayResult(velocity, time, result, "Velocity | v", "Time | t", '*');
+
+    displayResult(
+        "Distance | d",
+        velocity,
+        time,
+        result,
+        "Velocity | v",
+        "Time | t",
+        '*'
+    );
 }
 
 void AvgVelocityFormulas::calculateTime(const double distance, const double velocity)
 {
     double result{safeDivision(distance, velocity)};
-    displayResult(distance, velocity, result, "Distance | d", "Velocity | v", '/');
+
+    displayResult(
+        "Time | t",
+        distance,
+        velocity,
+        result,
+        "Distance | d",
+        "Velocity | v",
+        '/'
+    );
 }

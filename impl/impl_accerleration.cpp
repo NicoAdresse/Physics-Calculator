@@ -8,12 +8,28 @@ void AccelerationFormulas::calculateAcceleration(double initialVelocity, double 
     double change{calculateDelta(initialVelocity, finalVelocity, "Velocity")};
     double result{safeDivision(change, time)};
 
-    displayResult(change, time, result, "Delta Velocity | delta(v)", "Time | t", '/');
+    displayResult(
+        "Acceleration | a",
+        change,
+        time,
+        result,
+        "Delta Velocity | delta(v)",
+        "Time | t",
+        '/'
+    );
 }
 
 void AccelerationFormulas::calculateVelocityChange(const double acceleration, const double time)
 {
     double result{acceleration * time};
 
-    displayResult(acceleration, time, result, "Acceleration | a", "Time | t", '*');
+    displayResult(
+        "Delta Velocity | delta(v)",
+        acceleration,
+        time,
+        result,
+        "Acceleration | a",
+        "Time | t",
+        '*'
+    );
 }

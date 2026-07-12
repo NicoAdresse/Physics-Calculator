@@ -6,17 +6,44 @@
 void DensityFormulas::calculateMass(const double rho, const double volume)
 {
     const double result{rho * volume};
-    displayResult(rho, volume, result, "Density | Rho", "Volume | V", '*');
+
+    displayResult(
+        "Mass | m",
+        rho,
+        volume,
+        result,
+        "Density | Rho",
+        "Volume | v",
+        '*'
+    );
 }
 
 void DensityFormulas::calculateRho(const double mass, const double volume)
 {
     const double result{safeDivision(mass, volume)};
-    displayResult(mass, volume, result, "Mass | m", "Volume | V", '/');
+
+    displayResult(
+        "Density | Rho",
+        mass,
+        volume,
+        result,
+        "Mass | m",
+        "Volume | v",
+        '/'
+    );
 }
 
 void DensityFormulas::calculateVolume(const double rho, const double mass)
 {
     const double result{safeDivision(mass, rho)};
-    displayResult(mass, rho, result, "Mass | m", "Density | Rho", '/');
+
+    displayResult(
+        "Volume | v",
+        mass,
+        rho,
+        result,
+        "Mass | m",
+        "Density | Rho",
+        '/'
+    );
 }

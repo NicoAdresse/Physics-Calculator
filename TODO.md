@@ -18,7 +18,7 @@ time = distance / velocity
 
 
 
-Acceleration: <- CURRENT
+Acceleration: <- DONE
 
 acceleration = velocity change / time
 
@@ -26,7 +26,7 @@ velocity change = acceleration * time
 
 
 
-Force:
+Force: <- DONE
 
 force = mass * acceleration
 
@@ -36,7 +36,7 @@ acceleration = force / mass
 
 
 
-Weight:
+Weight: <- CURRENT
 
 weight = mass * gravity
 
