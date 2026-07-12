@@ -23,5 +23,7 @@ void displayResult(
     const char op
 )
 {
-    std::cout<<var1<<" ("<<var1Name<<") "<<op<<" "<<var2<<" ("<<var2Name<<") = "<<result<<'\n';
+    std::cout << var1 << " (" << var1Name << ") " 
+        << op << " " << var2 <<" (" << var2Name << ") = "
+        << result << '\n';
 }
