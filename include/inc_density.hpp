@@ -9,7 +9,7 @@ Formulas:
     V = m / rho
 */
 
-class Formulas
+class DensityFormulas
 {
 public:
     void calculateMass(const double rho, const double v);

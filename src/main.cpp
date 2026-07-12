@@ -1,10 +1,10 @@
 // src/main.cpp
 
-#include "../include/inc_formulas.hpp"
+#include "../include/inc_density.hpp"
 
 int main()
 {
-    Formulas f;
+    DensityFormulas f;
     f.calculateVolume(5.5, 6.6);
     return 0;
 }
