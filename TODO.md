@@ -8,7 +8,7 @@ volume = mass / rho
 
 
 
-Average velocity: <- CURRENT
+Average velocity: <- DONE
 
 velocity = distance / time
 
