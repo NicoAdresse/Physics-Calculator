@@ -3,16 +3,16 @@
 #pragma once
 
 /*
-Formulas:
-    rho = m/V
-    m = rho * V
-    V = m / rho
+Formulas: (Density)
+    rho = mass / volume (rho = mass / v)
+    mass = rho * volume (m = rho * v)
+    volume = mass / rho (v = m / rho)
 */
 
 class DensityFormulas
 {
 public:
-    void calculateMass(const double rho, const double v);
-    void calculateVolume(const double rho, const double m);
-    void calculateRho(const double m, const double v);
+    void calculateMass(const double rho, const double volume);
+    void calculateVolume(const double rho, const double mass);
+    void calculateRho(const double mass, const double volume);
 };

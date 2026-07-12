@@ -3,20 +3,20 @@
 #include "../include/inc_density.hpp"
 #include "helper/helper_funcs.hpp"
 
-void DensityFormulas::calculateMass(const double rho, const double v)
+void DensityFormulas::calculateMass(const double rho, const double volume)
 {
-    const double result{rho * v};
-    displayResult(rho, v, result, "Density | Rho", "Volume | V", '*');
+    const double result{rho * volume};
+    displayResult(rho, volume, result, "Density | Rho", "Volume | V", '*');
 }
 
-void DensityFormulas::calculateRho(const double m, const double v)
+void DensityFormulas::calculateRho(const double mass, const double volume)
 {
-    const double result{safeDivision(m, v)};
-    displayResult(m, v, result, "Mass | m", "Volume | V", '/');
+    const double result{safeDivision(mass, volume)};
+    displayResult(mass, volume, result, "Mass | m", "Volume | V", '/');
 }
 
-void DensityFormulas::calculateVolume(const double rho, const double m)
+void DensityFormulas::calculateVolume(const double rho, const double mass)
 {
-    const double result{safeDivision(m, rho)};
-    displayResult(rho, m, result, "Density | Rho", "Mass | m", '/');
+    const double result{safeDivision(mass, rho)};
+    displayResult(rho, mass, result, "Density | Rho", "Mass | m", '/');
 }

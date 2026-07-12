@@ -6,8 +6,8 @@
 template<typename T>
 T safeDivision(T num1, T num2)
 {
-    if(num2 == 0){
-        std::cout<<"ERR: Division by zero.\n";
+    if (num2 == 0) {
+        std::cout << "ERR: Division by zero.\n";
     }
 
     return num1 / num2;
