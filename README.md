@@ -15,20 +15,25 @@ Current Version: v0.0.1
 ```
 Physics_Calculator/
 ├── build/
-│   └── app
+│    ├── app
 ├── impl/
 │   ├── helper/
 │   │   └── helper_funcs.hpp
+│   ├── impl_accerleration.cpp
 │   ├── impl_avg_velocity.cpp
-│   └── impl_density.cpp
+│   ├── impl_density.cpp
+│   └── impl_force.cpp
 ├── include/
+│   ├── inc_accerleration.hpp
 │   ├── inc_avg_velocity.hpp
-│   └── inc_density.hpp
+│   ├── inc_density.hpp
+│   └── inc_force.hpp
 ├── src/
 │   └── main.cpp
+├── .gitignore
 ├── clean.sh
-├── make.sh
 ├── LICENSE
+├── make.sh
 ├── README.md
 └── TODO.md
 ```
