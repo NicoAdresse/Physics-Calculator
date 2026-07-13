@@ -43,3 +43,19 @@ void displayResult(
         << op << " " << var2 << " (" << var2Name << ") = "
         << result << " (" << expectedResult << ")" << '\n';
 }
+
+template<typename T>
+void displayResultKineticEnergy(
+    const std::string& expectedResult,
+    const double fraction,
+    const T var1,
+    const T var2,
+    const T result,
+    const std::string& var1Name,
+    const std::string& var2Name,
+    const char op
+)
+{
+    std::cout << fraction << " " << op << " " << var1 << " (" << var1Name <<  ") " << op
+        << " " << var2 << " (" << var2Name << ") " << " = " << result << '\n';
+}
