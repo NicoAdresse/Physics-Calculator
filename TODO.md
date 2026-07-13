@@ -36,13 +36,13 @@ acceleration = force / mass
 
 
 
-Weight: <- CURRENT
+Weight: <- DONE
 
 weight = mass * gravity
 
 
 
-Kinetic energy:
+Kinetic energy: <- CURRENT
 
 kinetic energy = 0.5 * mass * velocity^2
 
