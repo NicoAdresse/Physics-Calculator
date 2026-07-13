@@ -8,7 +8,7 @@ template<typename T>
 {
     if (num2 == 0) {
         std::cout << "ERR: Division by zero.\n";
-        return nullptr;
+        return 0;
     }
 
     return num1 / num2;
@@ -19,7 +19,7 @@ template<typename T>
 {
     if (initialValue == 0 || finalValue == 0) {
         std::cout << "Can not calculate delta if initialValue is 0 or finalValue is 0.\n";
-        return nullptr;
+        return 0;
     }
 
     T delta{finalValue - initialValue};
@@ -57,5 +57,5 @@ void displayResultKineticEnergy(
 )
 {
     std::cout << fraction << " " << op << " " << var1 << " (" << var1Name <<  ") " << op
-        << " " << var2 << " (" << var2Name << ") " << " = " << result << '\n';
+        << " " << var2 << "^2 (" << var2Name << ") " << " = " << result << '\n';
 }
