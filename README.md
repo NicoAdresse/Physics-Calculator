@@ -88,9 +88,12 @@ Delta Velocity: 9
 
 5.5 (Mass | m) * 9.2 (Gravity | g) = 50.6 (Weight)
 
+0.5 * 2.5 (Mass | m) * 5.5^2 (Velocity | v)  = 37.8125
+
 ------------------------
 
 Done!
+
 
 
 # License <->
