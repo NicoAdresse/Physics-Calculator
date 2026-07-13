@@ -22,11 +22,13 @@ Physics_Calculator/
 │   ├── impl_accerleration.cpp
 │   ├── impl_avg_velocity.cpp
 │   ├── impl_density.cpp
+│   ├── impl_weight.cpp
 │   └── impl_force.cpp
 ├── include/
 │   ├── inc_accerleration.hpp
 │   ├── inc_avg_velocity.hpp
 │   ├── inc_density.hpp
+│   ├── inc_weight.hpp
 │   └── inc_force.hpp
 ├── src/
 │   └── main.cpp
@@ -38,6 +40,55 @@ Physics_Calculator/
 └── TODO.md
 ```
 
+# Expected Output <->
+
+Compiling...
+
+Success!
+
+Creating build...
+
+Success!
+
+Moving app into build...
+
+Success!
+
+Executing application...
+
+------------------------
+
+10 (Density | Rho) * 5 (Volume | v) = 50 (Mass | m)
+
+4.5 (Mass | m) / 5.5 (Volume | v) = 0.818182 (Density | Rho)
+
+4 (Mass | m) / 9.4 (Density | Rho) = 0.425532 (Volume | v)
+
+14.2 (Velocity | v) * 5 (Time | t) = 71 (Distance | d)
+
+3.2 (Distance | d) / 6.4 (Velocity | v) = 0.5 (Time | t)
+
+3.4 (Distance | d) / 5.9 (Time | t) = 0.576271 (Velocity | v)
+
+Delta Velocity: 9
+
+9 (Delta Velocity | delta(v)) / 2 (Time | t) = 4.5 (Acceleration | a)
+
+25 (Acceleration | a) * 5 (Time | t) = 125 (Delta Velocity | delta(v))
+
+5.2 (Force | f) / 9.5 (Mass | m) = 0.547368 (Acceleration | a)
+
+9.2 (Mass | m) * 4.4 (Acceleration | a) = 40.48 (Force | f)
+
+9.3 (Force | f) / 5.325 (Acceleration | a) = 1.74648 (Mass | m)
+
+5.5 (Mass | m) * 9.2 (Gravity | g) = 50.6 (Weight)
+
+------------------------
+
+Done!
+
+
 # License <->
 
-MIT License
+MIT License -> Check LICENSE
