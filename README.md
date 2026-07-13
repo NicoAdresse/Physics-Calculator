@@ -8,7 +8,11 @@ This is a hobby project. It was meant for me to practice my handling of codebase
 
 Take everything here with a grain of salt.
 
+<<<<<<< HEAD
 Current Version: v1.0.1
+=======
+Current Version: v1.0.3
+>>>>>>> v1.0.3
 
 # Structure <->
 
