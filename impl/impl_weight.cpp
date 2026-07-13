@@ -8,7 +8,7 @@ void Physics::WeightFormulas::calculateWeight(const double mass, const double gr
     double result{mass * gravity};
 
     displayResult(
-        "Weight",
+        "Weight | w",
         mass,
         gravity,
         result,
