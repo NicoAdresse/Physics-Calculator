@@ -8,7 +8,7 @@ This is a hobby project. It was meant for me to practice my handling of codebase
 
 Take everything here with a grain of salt.
 
-Current Version: v1.0.2
+Current Version: v0.0.1
 
 # Structure <->
 
@@ -91,4 +91,4 @@ Done!
 
 # License <->
 
-MIT License -> Check LICENSE
+MIT License
