@@ -8,9 +8,12 @@ Formulas (Acceleration):
     velocity change = acceleration * time (delta(v) = a * t)
 */
 
-class AccelerationFormulas
+namespace Physics
 {
-public:
-    void calculateAcceleration(double initialVelocity, double finalVelocity, const double time);
-    void calculateVelocityChange(const double acceleration, const double time);
-};
+    class AccelerationFormulas
+    {
+    public:
+        void calculateAcceleration(double initialVelocity, double finalVelocity, const double time);
+        void calculateVelocityChange(const double acceleration, const double time);
+    };
+}
