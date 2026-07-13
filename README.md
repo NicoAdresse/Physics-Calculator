@@ -1,6 +1,6 @@
 # Physics Calculator <->
 
-Created by: NicoLuaJIT (Nico Erdmann) on 12.07.2026 (Sunday)
+Created by: NicoLuaJIT/NicoAdresse (Nico Erdmann) on 12.07.2026 (Sunday)
 
 # About <->
 
@@ -8,7 +8,7 @@ This is a hobby project. It was meant for me to practice my handling of codebase
 
 Take everything here with a grain of salt.
 
-Current Version: v0.0.1
+Current Version: v1.0.1
 
 # Structure <->
 
