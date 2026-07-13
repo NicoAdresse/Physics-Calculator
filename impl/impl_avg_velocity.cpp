@@ -3,7 +3,7 @@
 #include "../include/inc_avg_velocity.hpp"
 #include "helper/helper_funcs.hpp"
 
-void AvgVelocityFormulas::calculateVelocity(const double distance, const double time)
+void Physics::AvgVelocityFormulas::calculateVelocity(const double distance, const double time)
 {
     double result{safeDivision(distance, time)};
 
@@ -18,7 +18,7 @@ void AvgVelocityFormulas::calculateVelocity(const double distance, const double 
     );
 }
 
-void AvgVelocityFormulas::calculateDistance(const double velocity, const double time)
+void Physics::AvgVelocityFormulas::calculateDistance(const double velocity, const double time)
 {
     double result{velocity * time};
 
@@ -33,7 +33,7 @@ void AvgVelocityFormulas::calculateDistance(const double velocity, const double 
     );
 }
 
-void AvgVelocityFormulas::calculateTime(const double distance, const double velocity)
+void Physics::AvgVelocityFormulas::calculateTime(const double distance, const double velocity)
 {
     double result{safeDivision(distance, velocity)};
 

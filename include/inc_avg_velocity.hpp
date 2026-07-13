@@ -9,10 +9,13 @@ Formulas: (Average Velocity)
     time = distance / velocity (t = d / v)
 */
 
-class AvgVelocityFormulas
+namespace Physics
 {
-public:
-    void calculateVelocity(const double distance, const double time);
-    void calculateDistance(const double velocity, const double time);
-    void calculateTime(const double distance, const double velocityy);
-};
+    class AvgVelocityFormulas
+    {
+    public:
+        void calculateVelocity(const double distance, const double time);
+        void calculateDistance(const double velocity, const double time);
+        void calculateTime(const double distance, const double velocityy);
+    };
+}

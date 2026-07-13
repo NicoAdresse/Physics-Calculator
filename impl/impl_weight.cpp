@@ -3,7 +3,7 @@
 #include "helper/helper_funcs.hpp"
 #include "../include/inc_weight.hpp"
 
-void WeightFormulas::calculateWeight(const double mass, const double gravity)
+void Physics::WeightFormulas::calculateWeight(const double mass, const double gravity)
 {
     double result{mass * gravity};
 

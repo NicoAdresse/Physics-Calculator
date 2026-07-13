@@ -7,8 +7,11 @@ Formulas (Weight):
     weight = mass * gravity (w = m * g)
 */
 
-class WeightFormulas
+namespace Physics
 {
-public:
-    void calculateWeight(const double mass, const double gravity);
-};
+    class WeightFormulas
+    {
+    public:
+        void calculateWeight(const double mass, const double gravity);
+    };
+}

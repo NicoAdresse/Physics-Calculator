@@ -9,10 +9,13 @@ Formulas: (Density)
     volume = mass / rho (v = m / rho)
 */
 
-class DensityFormulas
+namespace Physics
 {
-public:
-    void calculateMass(const double rho, const double volume);
-    void calculateVolume(const double rho, const double mass);
-    void calculateRho(const double mass, const double volume);
-};
+    class DensityFormulas
+    {
+    public:
+        void calculateMass(const double rho, const double volume);
+        void calculateVolume(const double rho, const double mass);
+        void calculateRho(const double mass, const double volume);
+    };
+}

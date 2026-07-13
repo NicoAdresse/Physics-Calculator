@@ -10,6 +10,8 @@ Take everything here with a grain of salt.
 
 Current Version: v1.0.3
 
+Every class is wrapped in the "Physics" namespace.
+
 # Structure <->
 
 ```
@@ -23,12 +25,14 @@ Physics_Calculator/
 │   ├── impl_avg_velocity.cpp
 │   ├── impl_density.cpp
 │   ├── impl_weight.cpp
+│    ├── impl_kinetic_energy.cpp
 │   └── impl_force.cpp
 ├── include/
 │   ├── inc_accerleration.hpp
 │   ├── inc_avg_velocity.hpp
 │   ├── inc_density.hpp
 │   ├── inc_weight.hpp
+│    ├── inc_kinetic_energy.hpp
 │   └── inc_force.hpp
 ├── src/
 │   └── main.cpp

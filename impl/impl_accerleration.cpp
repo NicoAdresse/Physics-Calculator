@@ -3,7 +3,7 @@
 #include "../include/inc_accerleration.hpp"
 #include "helper/helper_funcs.hpp"
 
-void AccelerationFormulas::calculateAcceleration(double initialVelocity, double finalVelocity, const double time)
+void Physics::AccelerationFormulas::calculateAcceleration(double initialVelocity, double finalVelocity, const double time)
 {
     double change{calculateDelta(initialVelocity, finalVelocity, "Velocity")};
     double result{safeDivision(change, time)};
@@ -19,7 +19,7 @@ void AccelerationFormulas::calculateAcceleration(double initialVelocity, double 
     );
 }
 
-void AccelerationFormulas::calculateVelocityChange(const double acceleration, const double time)
+void Physics::AccelerationFormulas::calculateVelocityChange(const double acceleration, const double time)
 {
     double result{acceleration * time};
 

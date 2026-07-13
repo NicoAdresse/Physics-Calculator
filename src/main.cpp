@@ -9,11 +9,11 @@
 
 int main()
 {
-    DensityFormulas df;
-    AvgVelocityFormulas avgvf;
-    AccelerationFormulas accf;
-    ForceFormulas ff;
-    WeightFormulas wf;
+    Physics::DensityFormulas df;
+    Physics::AvgVelocityFormulas avgvf;
+    Physics::AccelerationFormulas accf;
+    Physics::ForceFormulas ff;
+    Physics::WeightFormulas wf;
     Physics::KineticEnergyFormulas p_kef;
 
     df.calculateMass(10.0, 5.0);
