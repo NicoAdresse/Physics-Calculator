@@ -4,18 +4,24 @@
 #include <iostream>
 
 template<typename T>
-T safeDivision(T num1, T num2)
+[[nodiscard]] T safeDivision(T num1, T num2)
 {
     if (num2 == 0) {
         std::cout << "ERR: Division by zero.\n";
+        return nullptr;
     }
 
     return num1 / num2;
 }
 
 template<typename T>
-T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
+[[nodiscard]] T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
 {
+    if (initialValue == 0 || finalValue == 0) {
+        std::cout << "Can not calculate delta if initialValue is 0 or finalValue is 0.\n";
+        return nullptr;
+    }
+
     T delta{finalValue - initialValue};
     std::cout << "Delta " << valueName << ": " << delta << '\n';
     
