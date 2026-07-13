@@ -16,6 +16,6 @@ namespace Physics
     public:
         void calculateVelocity(const double distance, const double time);
         void calculateDistance(const double velocity, const double time);
-        void calculateTime(const double distance, const double velocityy);
+        void calculateTime(const double distance, const double velocity);
     };
 }
