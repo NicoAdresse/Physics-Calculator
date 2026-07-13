@@ -1,6 +1,6 @@
 # Physics Calculator <->
 
-Created by: NicoLuaJIT (Nico Erdmann) on 12.07.2026 (Sunday)
+Created by: NicoLuaJIT/NicoAdresse (Nico Erdmann) on 12.07.2026 (Sunday)
 
 # About <->
 
