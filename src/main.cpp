@@ -4,6 +4,7 @@
 #include "../include/inc_avg_velocity.hpp"
 #include "../include/inc_accerleration.hpp"
 #include "../include/inc_force.hpp"
+#include "../include/inc_weight.hpp"
 
 int main()
 {
@@ -11,6 +12,7 @@ int main()
     AvgVelocityFormulas avgvf;
     AccelerationFormulas accf;
     ForceFormulas ff;
+    WeightFormulas wf;
 
     df.calculateMass(10.0, 5.0);
     df.calculateRho(4.5, 5.5);
@@ -25,7 +27,9 @@ int main()
 
     ff.calculateAcceleration(5.2, 9.5);
     ff.calculateForce(9.2, 4.4);
-    ff.calculateMass(9.3, 53.2);
+    ff.calculateMass(9.3, 5.325);
+
+    wf.calculateWeight(5.5, 9.2);
 
     return 0;
 }
