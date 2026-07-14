@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_density.cpp
 
-#include "../../include/Mechanics/inc_density.hpp"
+#include "Mechanics/inc_density.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::DensityFormulas::calculateMass(const double rho, const double volume)

@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_weight.cpp
 
-#include "../../include/Mechanics/inc_weight.hpp"
+#include "Mechanics/inc_weight.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::WeightFormulas::calculateWeight(const double mass, const double gravity)

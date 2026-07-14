@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_acceleration.cpp
 
-#include "../../include/Mechanics/inc_acceleration.hpp"
+#include "Mechanics/inc_acceleration.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::AccelerationFormulas::calculateAcceleration(

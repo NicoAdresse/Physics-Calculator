@@ -1,6 +1,6 @@
 // impl/Energy/impl_kinetic_energy.cpp
 
-#include "../../include/Energy/inc_kinetic_energy.hpp"
+#include "Energy/inc_kinetic_energy.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Energy::KineticEnergyFormulas::calculateKineticEnergy(
