@@ -1,4 +1,4 @@
-// include/inc_weight.hpp
+// include/Mechanics/inc_weight.hpp
 
 #pragma once
 

@@ -1,4 +1,4 @@
-// include/inc_avg_velocity.hpp
+// include/Mechanics/inc_avg_velocity.hpp
 
 #pragma once
 
