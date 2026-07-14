@@ -6,6 +6,7 @@
 #include "../include/inc_force.hpp"
 #include "../include/inc_weight.hpp"
 #include "../include/inc_kinetic_energy.hpp"
+#include "../include/inc_potential_energy.hpp"
 
 int main()
 {
@@ -14,7 +15,8 @@ int main()
     Physics::AccelerationFormulas accf;
     Physics::ForceFormulas ff;
     Physics::WeightFormulas wf;
-    Physics::KineticEnergyFormulas p_kef;
+    Physics::KineticEnergyFormulas kef;
+    Physics::PotentialEnergyFormulas pef;
 
     df.calculateMass(10.0, 5.0);
     df.calculateRho(4.5, 5.5);
@@ -33,7 +35,9 @@ int main()
 
     wf.calculateWeight(5.5, 9.2);
 
-    p_kef.calculateKineticEnergy(2.5, 5.5);
+    kef.calculateKineticEnergy(2.5, 5.5);
+
+    pef.calculatePotentialEnergy(10.4, 85.1, 1.4);
 
     return 0;
 }

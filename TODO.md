@@ -42,13 +42,13 @@ weight = mass * gravity
 
 
 
-Kinetic energy: <- CURRENT
+Kinetic energy: <- DONE
 
 kinetic energy = 0.5 * mass * velocity^2
 
 
 
-Potential energy:
+Potential energy: <- CURRENT
 
 potential energy = mass * gravity * height
 

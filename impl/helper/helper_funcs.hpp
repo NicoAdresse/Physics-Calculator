@@ -40,12 +40,12 @@ void displayResult(
 )
 {
     std::cout << var1 << " (" << var1Name << ") " 
-        << op << " " << var2 << " (" << var2Name << ") = "
+        << op << ' ' << var2 << " (" << var2Name << ") = "
         << result << " (" << expectedResult << ")" << '\n';
 }
 
 template<typename T>
-void displayResultKineticEnergy(
+void displayResultWithFraction(
     const std::string& expectedResult,
     const double fraction,
     const T var1,
@@ -53,9 +53,30 @@ void displayResultKineticEnergy(
     const T result,
     const std::string& var1Name,
     const std::string& var2Name,
-    const char op
+    const char op1,
+    const char op2
 )
 {
-    std::cout << fraction << " " << op << " " << var1 << " (" << var1Name <<  ") " << op
-        << " " << var2 << "^2 (" << var2Name << ") " << " = " << result << '\n';
+    std::cout << fraction << ' ' << op1 << ' ' << var1 << " (" << var1Name <<  ") " << op2
+        << ' ' << var2 << "^2 (" << var2Name << ")" << " = " << result << " (" << expectedResult << ") \n";
+}
+
+template<typename T>
+void displayResultThreeVariables(
+    const std::string& expectedResult,
+    const T var1,
+    const T var2,
+    const T var3,
+    const T result,
+    const std::string& var1Name,
+    const std::string& var2Name,
+    const std::string& var3Name,
+    const char op1,
+    const char op2
+)
+{
+    std::cout << var1 << " (" << var1Name << ") " <<
+        op1 << ' ' << var2 << " (" << var2Name << ") "
+        << op2 << ' ' << var3 << " (" << var3Name << ") = "
+        << result << " (" <<  expectedResult << ") \n";
 }

@@ -7,7 +7,7 @@ void Physics::KineticEnergyFormulas::calculateKineticEnergy(const double mass, c
 {
     const double result{(0.5 * mass) * (velocity * velocity)};
 
-    displayResultKineticEnergy(
+    displayResultWithFraction(
         "Kinetic Energy | ke",
         0.5,
         mass,
@@ -15,6 +15,7 @@ void Physics::KineticEnergyFormulas::calculateKineticEnergy(const double mass, c
         result,
         "Mass | m",
         "Velocity | v",
+        '*',
         '*'
     );
 }
