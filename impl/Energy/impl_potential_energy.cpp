@@ -1,9 +1,9 @@
-// impl/impl_potential_energy.cpp
+// impl/Energy/impl_potential_energy.cpp
 
-#include "../include/inc_potential_energy.hpp"
-#include "helper/helper_funcs.hpp"
+#include "../../include/Energy/inc_potential_energy.hpp"
+#include "../helper/helper_funcs.hpp"
 
-void Physics::PotentialEnergyFormulas::calculatePotentialEnergy(
+void Physics::Energy::PotentialEnergyFormulas::calculatePotentialEnergy(
     const double mass,
     const double gravity,
     const double height

@@ -1,9 +1,9 @@
-// impl/impl_formulas.cpp
+// impl/Mechanics/impl_density.cpp
 
-#include "../include/inc_density.hpp"
-#include "helper/helper_funcs.hpp"
+#include "../../include/Mechanics/inc_density.hpp"
+#include "../helper/helper_funcs.hpp"
 
-void Physics::DensityFormulas::calculateMass(const double rho, const double volume)
+void Physics::Mechanics::DensityFormulas::calculateMass(const double rho, const double volume)
 {
     const double result{rho * volume};
 
@@ -18,7 +18,7 @@ void Physics::DensityFormulas::calculateMass(const double rho, const double volu
     );
 }
 
-void Physics::DensityFormulas::calculateRho(const double mass, const double volume)
+void Physics::Mechanics::DensityFormulas::calculateRho(const double mass, const double volume)
 {
     const double result{safeDivision(mass, volume)};
 
@@ -33,7 +33,7 @@ void Physics::DensityFormulas::calculateRho(const double mass, const double volu
     );
 }
 
-void Physics::DensityFormulas::calculateVolume(const double rho, const double mass)
+void Physics::Mechanics::DensityFormulas::calculateVolume(const double rho, const double mass)
 {
     const double result{safeDivision(mass, rho)};
 

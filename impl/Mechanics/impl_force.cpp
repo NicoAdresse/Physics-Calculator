@@ -1,9 +1,9 @@
-// impl/impl_force.cpp
+// impl/Mechanics/impl_force.cpp
 
-#include "../include/inc_force.hpp"
-#include "helper/helper_funcs.hpp"
+#include "../../include/Mechanics/inc_force.hpp"
+#include "../helper/helper_funcs.hpp"
 
-void Physics::ForceFormulas::calculateForce(const double mass, const double acceleration)
+void Physics::Mechanics::ForceFormulas::calculateForce(const double mass, const double acceleration)
 {
     double result{mass * acceleration};
     
@@ -18,7 +18,7 @@ void Physics::ForceFormulas::calculateForce(const double mass, const double acce
     );
 }
 
-void Physics::ForceFormulas::calculateMass(const double force, const double acceleration)
+void Physics::Mechanics::ForceFormulas::calculateMass(const double force, const double acceleration)
 {
     double result{safeDivision(force, acceleration)};
 
@@ -33,7 +33,7 @@ void Physics::ForceFormulas::calculateMass(const double force, const double acce
     );
 }
 
-void Physics::ForceFormulas::calculateAcceleration(const double force, const double mass)
+void Physics::Mechanics::ForceFormulas::calculateAcceleration(const double force, const double mass)
 {
     double result{safeDivision(force, mass)};
 

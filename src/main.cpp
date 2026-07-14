@@ -1,24 +1,25 @@
 // src/main.cpp
 
-#include "../include/inc_density.hpp"
-#include "../include/inc_avg_velocity.hpp"
-#include "../include/inc_accerleration.hpp"
-#include "../include/inc_force.hpp"
-#include "../include/inc_weight.hpp"
-#include "../include/inc_kinetic_energy.hpp"
-#include "../include/inc_potential_energy.hpp"
-#include "../include/inc_work.hpp"
+#include "../include/Mechanics/inc_density.hpp"
+#include "../include/Mechanics/inc_avg_velocity.hpp"
+#include "../include/Mechanics/inc_accerleration.hpp"
+#include "../include/Mechanics/inc_force.hpp"
+#include "../include/Mechanics/inc_weight.hpp"
+#include "../include/Mechanics/inc_work.hpp"
+#include "../include/Energy/inc_kinetic_energy.hpp"
+#include "../include/Energy/inc_potential_energy.hpp"
 
 int main()
 {
-    Physics::DensityFormulas df;
-    Physics::AvgVelocityFormulas avgvf;
-    Physics::AccelerationFormulas accf;
-    Physics::ForceFormulas ff;
-    Physics::WeightFormulas wf;
-    Physics::KineticEnergyFormulas kef;
-    Physics::PotentialEnergyFormulas pef;
-    Physics::WorkFormulas wof;
+    Physics::Mechanics::DensityFormulas df;
+    Physics::Mechanics::AvgVelocityFormulas avgvf;
+    Physics::Mechanics::AccelerationFormulas accf;
+    Physics::Mechanics::ForceFormulas ff;
+    Physics::Mechanics::WeightFormulas wf;
+    Physics::Mechanics::WorkFormulas wof;
+
+    Physics::Energy::KineticEnergyFormulas kef;
+    Physics::Energy::PotentialEnergyFormulas pef;
 
     df.calculateMass(10.0, 5.0);
     df.calculateRho(4.5, 5.5);

@@ -1,9 +1,12 @@
-// impl/impl_avg_velocity.cpp
+// impl/Mechanics/impl_avg_velocity.cpp
 
-#include "../include/inc_avg_velocity.hpp"
-#include "helper/helper_funcs.hpp"
+#include "../../include/Mechanics/inc_avg_velocity.hpp"
+#include "../helper/helper_funcs.hpp"
 
-void Physics::AvgVelocityFormulas::calculateVelocity(const double distance, const double time)
+void Physics::Mechanics::AvgVelocityFormulas::calculateVelocity(
+    const double distance,
+    const double time
+)
 {
     double result{safeDivision(distance, time)};
 
@@ -18,7 +21,9 @@ void Physics::AvgVelocityFormulas::calculateVelocity(const double distance, cons
     );
 }
 
-void Physics::AvgVelocityFormulas::calculateDistance(const double velocity, const double time)
+void Physics::Mechanics::AvgVelocityFormulas::calculateDistance(const double velocity,
+    const double time
+)
 {
     double result{velocity * time};
 
@@ -33,7 +38,10 @@ void Physics::AvgVelocityFormulas::calculateDistance(const double velocity, cons
     );
 }
 
-void Physics::AvgVelocityFormulas::calculateTime(const double distance, const double velocity)
+void Physics::Mechanics::AvgVelocityFormulas::calculateTime(
+    const double distance,
+    const double velocity
+)
 {
     double result{safeDivision(distance, velocity)};
 

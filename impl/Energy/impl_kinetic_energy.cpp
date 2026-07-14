@@ -1,9 +1,12 @@
-// impl/impl_kinetic_energy.cpp
+// impl/Energy/impl_kinetic_energy.cpp
 
-#include "../include/inc_kinetic_energy.hpp"
-#include "helper/helper_funcs.hpp"
+#include "../../include/Energy/inc_kinetic_energy.hpp"
+#include "../helper/helper_funcs.hpp"
 
-void Physics::KineticEnergyFormulas::calculateKineticEnergy(const double mass, const double velocity)
+void Physics::Energy::KineticEnergyFormulas::calculateKineticEnergy(
+    const double mass,
+    const double velocity
+)
 {
     const double result{(0.5 * mass) * (velocity * velocity)};
 

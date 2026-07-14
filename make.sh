@@ -4,7 +4,7 @@ set -e
 
 echo "Compiling..."
 
-g++ src/*.cpp impl/*.cpp -o app
+g++ src/*.cpp impl/Mechanics/*.cpp impl/Energy/*.cpp -o app
 
 echo "Success!"
 echo "Creating build..."
