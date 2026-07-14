@@ -44,8 +44,6 @@ int main()
     pef.calculatePotentialEnergy(10.4, 85.1, 1.4);
 
     wof.calculateWork(25.2, 1.5);
-
-    ff.calculateAcceleration(2.5, 0.0);
-
+    
     return 0;
 }
