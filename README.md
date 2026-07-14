@@ -8,32 +8,40 @@ This is a hobby project. It was meant for me to practice my handling of codebase
 
 Take everything here with a grain of salt.
 
-Current Version: v1.0.3
+Current Version: v1.0.4
 
-Every class is wrapped in the "Physics" namespace.
+Every class is wrapped in the namespace of their domain.
 
 # Structure <->
 
 ```
 Physics_Calculator/
 ├── build/
-│    ├── app
+│   └── app
 ├── impl/
+│   ├── Energy/
+│   │   ├── impl_kinetic_energy.cpp
+│   │   └── impl_potential_energy.cpp
 │   ├── helper/
 │   │   └── helper_funcs.hpp
-│   ├── impl_accerleration.cpp
-│   ├── impl_avg_velocity.cpp
-│   ├── impl_density.cpp
-│   ├── impl_weight.cpp
-│   ├── impl_kinetic_energy.cpp
-│   └── impl_force.cpp
+│   └── Mechanics/
+│       ├── impl_acceleration.cpp
+│       ├── impl_avg_velocity.cpp
+│       ├── impl_density.cpp
+│       ├── impl_force.cpp
+│       ├── impl_weight.cpp
+│       └── impl_work.cpp
 ├── include/
-│   ├── inc_accerleration.hpp
-│   ├── inc_avg_velocity.hpp
-│   ├── inc_density.hpp
-│   ├── inc_weight.hpp
-│   ├── inc_kinetic_energy.hpp
-│   └── inc_force.hpp
+│   ├── Energy/
+│   │   ├── inc_kinetic_energy.hpp
+│   │   └── inc_potential_energy.hpp
+│   └── Mechanics/
+│       ├── inc_acceleration.hpp
+│       ├── inc_avg_velocity.hpp
+│       ├── inc_density.hpp
+│       ├── inc_force.hpp
+│       ├── inc_weight.hpp
+│       └── inc_work.hpp
 ├── src/
 │   └── main.cpp
 ├── .gitignore
