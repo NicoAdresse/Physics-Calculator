@@ -1,12 +1,15 @@
-#.gitignore
+# .gitignore
 
 # Build
 build/
-*.o
-*.obj
-*.exe
-*.out
-*.app
+    *.o
+    *.obj
+    *.exe
+    *.out
+    *.app
+    *.txt
+    *.cmake
+    *.json
 
 # OS junk
 .DS_Store
