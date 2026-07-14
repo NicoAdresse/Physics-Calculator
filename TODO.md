@@ -48,13 +48,13 @@ kinetic energy = 0.5 * mass * velocity^2
 
 
 
-Potential energy: <- CURRENT
+Potential energy: <- DONE
 
 potential energy = mass * gravity * height
 
 
 
-Work:
+Work: <- CURRENT
 
 work = force * distance
 

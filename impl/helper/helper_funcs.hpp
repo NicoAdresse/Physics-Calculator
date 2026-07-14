@@ -23,7 +23,6 @@ template<typename T>
     }
 
     T delta{finalValue - initialValue};
-    std::cout << "Delta " << valueName << ": " << delta << '\n';
     
     return delta;
 }
