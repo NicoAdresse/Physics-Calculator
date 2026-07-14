@@ -1,13 +1,14 @@
 // impl/helper/helper_funcs.hpp
 
 #include <string_view>
+#include <expected>
 #include <iostream>
 
 template<typename T>
 [[nodiscard]] T safeDivision(T num1, T num2)
 {
     if (num2 == 0) {
-        std::cout << "ERR: Division by zero.\n";
+        std::cerr << "Cannot divide by zero!\n";
         return 0;
     }
 
@@ -18,7 +19,7 @@ template<typename T>
 [[nodiscard]] T calculateDelta(T initialValue, T finalValue, std::string_view valueName)
 {
     if (initialValue == 0 || finalValue == 0) {
-        std::cout << "Can not calculate delta if initialValue is 0 or finalValue is 0.\n";
+        std::cerr << "Cannot subtract initialValue or finalValue if they're 0!\n";
         return 0;
     }
 

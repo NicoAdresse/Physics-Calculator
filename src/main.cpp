@@ -45,5 +45,7 @@ int main()
 
     wof.calculateWork(25.2, 1.5);
 
+    ff.calculateAcceleration(2.5, 0.0);
+
     return 0;
 }

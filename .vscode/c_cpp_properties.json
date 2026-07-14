@@ -7,7 +7,7 @@
             ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cppStandard": "c++26",
             "intelliSenseMode": "linux-clang-x64"
         }
     ],
