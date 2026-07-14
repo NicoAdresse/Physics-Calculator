@@ -1,7 +1,7 @@
 // impl/Energy/impl_kinetic_energy.cpp
 
 #include "Energy/inc_kinetic_energy.hpp"
-#include "../helper/helper_funcs.hpp"
+#include "../Helper/helper_funcs.hpp"
 
 void Physics::Energy::KineticEnergyFormulas::calculateKineticEnergy(
     const double mass,

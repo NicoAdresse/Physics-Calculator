@@ -22,7 +22,7 @@ Physics_Calculator/
 │   ├── Energy/
 │   │   ├── impl_kinetic_energy.cpp
 │   │   └── impl_potential_energy.cpp
-│   ├── helper/
+│   ├── Helper/
 │   │   └── helper_funcs.hpp
 │   └── Mechanics/
 │       ├── impl_acceleration.cpp

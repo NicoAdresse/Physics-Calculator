@@ -1,7 +1,7 @@
 // impl/Mechanics/impl_acceleration.cpp
 
 #include "Mechanics/inc_acceleration.hpp"
-#include "../helper/helper_funcs.hpp"
+#include "../Helper/helper_funcs.hpp"
 
 void Physics::Mechanics::AccelerationFormulas::calculateAcceleration(
     double initialVelocity,
