@@ -1,6 +1,6 @@
 // impl/helper/helper_funcs.hpp
 
-#include <string>
+#include <string_view>
 #include <iostream>
 
 template<typename T>
@@ -15,7 +15,7 @@ template<typename T>
 }
 
 template<typename T>
-[[nodiscard]] T calculateDelta(T initialValue, T finalValue, const std::string& valueName)
+[[nodiscard]] T calculateDelta(T initialValue, T finalValue, std::string_view valueName)
 {
     if (initialValue == 0 || finalValue == 0) {
         std::cout << "Can not calculate delta if initialValue is 0 or finalValue is 0.\n";
@@ -29,12 +29,12 @@ template<typename T>
 
 template<typename T>
 void displayResult(
-    const std::string& expectedResult,
+    std::string_view expectedResult,
     const T var1,
     const T var2,
     const T result,
-    const std::string& var1Name,
-    const std::string& var2Name,
+    std::string_view var1Name,
+    std::string_view var2Name,
     const char op
 )
 {
@@ -45,13 +45,13 @@ void displayResult(
 
 template<typename T>
 void displayResultWithFraction(
-    const std::string& expectedResult,
+    std::string_view expectedResult,
     const double fraction,
     const T var1,
     const T var2,
     const T result,
-    const std::string& var1Name,
-    const std::string& var2Name,
+    std::string_view var1Name,
+    std::string_view var2Name,
     const char op1,
     const char op2
 )
@@ -62,14 +62,14 @@ void displayResultWithFraction(
 
 template<typename T>
 void displayResultThreeVariables(
-    const std::string& expectedResult,
+    std::string_view expectedResult,
     const T var1,
     const T var2,
     const T var3,
     const T result,
-    const std::string& var1Name,
-    const std::string& var2Name,
-    const std::string& var3Name,
+    std::string_view var1Name,
+    std::string_view var2Name,
+    std::string_view var3Name,
     const char op1,
     const char op2
 )
