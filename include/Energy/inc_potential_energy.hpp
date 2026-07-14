@@ -1,4 +1,4 @@
-// include/inc_potential_energy.hpp
+// include/Energy/inc_potential_energy.hpp
 
 #pragma once
 
