@@ -1,171 +1,133 @@
-Density:    <- DONE
+Mechanics (Kinematics & Dynamics)
 
-rho = mass / volume
+    Density (DONE)
 
-mass = rho * volume
+        rho = mass / volume
 
-volume = mass / rho
+        mass = rho * volume
 
+        volume = mass / rho
 
+    Average velocity (DONE)
 
-Average velocity: <- DONE
+        velocity = distance / time
 
-velocity = distance / time
+        distance = velocity * time
 
-distance = velocity * time
+        time = distance / velocity
 
-time = distance / velocity
+    Acceleration (DONE)
 
+        acceleration = velocity change / time
 
+        velocity change = acceleration * time
 
-Acceleration: <- DONE
+    Force (DONE)
 
-acceleration = velocity change / time
+        force = mass * acceleration
 
-velocity change = acceleration * time
+        mass = force / acceleration
 
+        acceleration = force / mass
 
+    Weight (DONE)
 
-Force: <- DONE
+        weight = mass * gravity
 
-force = mass * acceleration
+    Work (DONE)
 
-mass = force / acceleration
+        work = force * distance
 
-acceleration = force / mass
+    Power (CURRENT)
 
+        power = work / time
 
+    Momentum (PENDING)
 
-Weight: <- DONE
+        momentum = mass * velocity
 
-weight = mass * gravity
+    Pressure (PENDING)
 
+        pressure = force / area
 
+    Hooke's law (PENDING)
 
-Kinetic energy: <- DONE
+        spring force = spring constant * displacement
 
-kinetic energy = 0.5 * mass * velocity^2
+    Torque (PENDING)
 
+        torque = force * distance
 
+Energy
 
-Potential energy: <- DONE
+    Kinetic energy (DONE)
 
-potential energy = mass * gravity * height
+        kinetic energy = 0.5 * mass * velocity^2
 
+    Potential energy (DONE)
 
+        potential energy = mass * gravity * height
 
-Work: <- CURRENT
+    Heat energy (PENDING)
 
-work = force * distance
+        heat energy = mass * specific heat capacity * temperature change
 
+    Efficiency (PENDING)
 
+        efficiency = useful output / total input
 
-Power:
+Electricity & Magnetism
 
-power = work / time
+    Ohm's law (PENDING)
 
+        voltage = resistance * current
 
+        current = voltage / resistance
 
-Momentum:
+        resistance = voltage / current
 
-momentum = mass * velocity
+    Electrical power (PENDING)
 
+        power = voltage * current
 
+    Charge (PENDING)
 
-Pressure:
+        charge = current * time
 
-pressure = force / area
+    Coulomb's law (PENDING)
 
+        electric force = constant * charge1 * charge2 / distance^2
 
+Waves & Oscillations
 
-Ohm's law:
+    Wave speed (PENDING)
 
-voltage = resistance * current
+        wave speed = frequency * wavelength
 
-current = voltage / resistance
+    Frequency (PENDING)
 
-resistance = voltage / current
+        frequency = 1 / period
 
+    Period (PENDING)
 
+        period = 1 / frequency
 
-Electrical power:
+Gravity
 
-power = voltage * current
+    Gravitational force (PENDING)
 
+        gravity force = constant * mass1 * mass2 / distance^2
 
+Rotational Dynamics
 
-Charge:
+    Kinetic energy (rotation) (PENDING)
 
-charge = current * time
+        rotational energy = 0.5 * moment of inertia * angular velocity^2
 
+    Angular velocity (PENDING)
 
+        angular velocity = angle / time
 
-Wave speed:
+    Angular acceleration (PENDING)
 
-wave speed = frequency * wavelength
-
-
-
-Frequency:
-
-frequency = 1 / period
-
-
-
-Period:
-
-period = 1 / frequency
-
-
-
-Hooke's law:
-
-spring force = spring constant * displacement
-
-
-
-Torque:
-
-torque = force * distance
-
-
-
-Coulomb's law:
-
-electric force = constant * charge1 * charge2 / distance^2
-
-
-
-Gravitational force:
-
-gravity force = constant * mass1 * mass2 / distance^2
-
-
-
-Heat energy:
-
-heat energy = mass * specific heat capacity * temperature change
-
-
-
-Efficiency:
-
-efficiency = useful output / total input
-
-
-
-Kinetic energy (rotation):
-
-rotational energy = 0.5 * moment of inertia * angular velocity^2
-
-
-
-Angular velocity:
-
-angular velocity = angle / time
-
-
-
-Angular acceleration:
-
-angular acceleration = angular velocity change / time
+        angular acceleration = angular velocity change / time
