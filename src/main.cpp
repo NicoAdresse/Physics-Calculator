@@ -1,13 +1,14 @@
 // src/main.cpp
 
-#include "../include/Mechanics/inc_density.hpp"
-#include "../include/Mechanics/inc_avg_velocity.hpp"
-#include "../include/Mechanics/inc_acceleration.hpp"
-#include "../include/Mechanics/inc_force.hpp"
-#include "../include/Mechanics/inc_weight.hpp"
-#include "../include/Mechanics/inc_work.hpp"
-#include "../include/Energy/inc_kinetic_energy.hpp"
-#include "../include/Energy/inc_potential_energy.hpp"
+#include "Mechanics/inc_density.hpp"
+#include "Mechanics/inc_avg_velocity.hpp"
+#include "Mechanics/inc_acceleration.hpp"
+#include "Mechanics/inc_force.hpp"
+#include "Mechanics/inc_weight.hpp"
+#include "Mechanics/inc_work.hpp"
+#include "Energy/inc_kinetic_energy.hpp"
+#include "Energy/inc_potential_energy.hpp"
+
 
 int main()
 {

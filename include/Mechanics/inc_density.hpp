@@ -1,4 +1,4 @@
-// include/Mechanics/inc_formulas.hpp
+// include/Mechanics/inc_density.hpp
 
 #pragma once
 

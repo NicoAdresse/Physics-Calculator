@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_work.cpp
 
-#include "../../include/Mechanics/inc_work.hpp"
+#include "Mechanics/inc_work.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::WorkFormulas::calculateWork(const double force, const double distance)

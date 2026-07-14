@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_force.cpp
 
-#include "../../include/Mechanics/inc_force.hpp"
+#include "Mechanics/inc_force.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::ForceFormulas::calculateForce(const double mass, const double acceleration)

@@ -1,6 +1,6 @@
 // impl/Mechanics/impl_avg_velocity.cpp
 
-#include "../../include/Mechanics/inc_avg_velocity.hpp"
+#include "Mechanics/inc_avg_velocity.hpp"
 #include "../helper/helper_funcs.hpp"
 
 void Physics::Mechanics::AvgVelocityFormulas::calculateVelocity(
