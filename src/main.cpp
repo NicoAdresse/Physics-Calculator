@@ -1,6 +1,6 @@
 // src/main.cpp
 
-#include <iostream>
+#include <print>
 
 #include "Mechanics/inc_density.hpp"
 #include "Mechanics/inc_avg_velocity.hpp"
@@ -19,6 +19,10 @@
 #include "Energy/inc_heat_energy.hpp"
 #include "Energy/inc_efficiency.hpp"
 
+#include "Electricity/inc_ohms_law.hpp"
+#include "Electricity/inc_power.hpp"
+#include "Electricity/inc_charge.hpp"
+#include "Electricity/inc_coulombs_law.hpp"
 
 int main()
 {
@@ -39,7 +43,12 @@ int main()
     Physics::Energy::HeatEnergy hef;
     Physics::Energy::Efficiency eff;
 
-    std::cout << "=== Mechanics ===\n\n";
+    Physics::Electricity::OhmsLaw olf;
+    Physics::Electricity::Power epf;
+    Physics::Electricity::Charge chf;
+    Physics::Electricity::CoulombsLaw cllf;
+
+    std::println("=== Mechanics ===\n");
 
     df.calculateMass(10.0, 5.0, true);
     df.calculateRho(4.5, 5.5, true);
@@ -71,7 +80,7 @@ int main()
     tqf.calculateTorqueSimplified(5.2, 86.2, true);
     tqf.calculateTorque(10.5, 2.5, 5.5, true);
 
-    std::cout << "\n=== Energy ===\n";
+    std::println("\n=== Energy ===");
 
     kef.calculateKineticEnergy(2.5, 5.5, true);
 
@@ -82,10 +91,22 @@ int main()
     eff.calculateEfficiencyDecimal(2.4, 10.4, true);
     eff.calculateEfficiencyPercentage(2.4, 10.4, true);
 
-    std::cout << "\n=== Experimental ===\n";
+    std::println("\n=== Electricity ===");
+
+    olf.calculateCurrent(1.5, 2.5, true);
+    olf.calculateResistance(5.2, 5.2, true);
+    olf.calculateVoltage(4.2, 7.5, true);
+
+    epf.calculatePower(1.5, 2.45219, true);
+
+    chf.calculateCharge(4.5, 6.9, true);
+
+    cllf.calculateElectricForce(3.5, 9.5, 9.5, 16.2, true);
+
+    std::println("\n=== Experimental ===");
 
     const double dfResult{df.calculateMass(10.0, 2.0, false)};
-    std::cout << dfResult + 5.0 << '\n';
+    std::println("{}", dfResult + 5.0);
     
     return 0;
 }

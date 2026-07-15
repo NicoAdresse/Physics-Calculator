@@ -1,8 +1,9 @@
 // impl/helper/helper_funcs.hpp
 
+#include <iostream>
 #include <string_view>
 #include <expected>
-#include <iostream>
+#include <print>
 
 const double PI{3.14159265358979323846};
 
@@ -32,7 +33,7 @@ template<typename T>
 
 template<typename T>
 void displayResult(
-    std::string_view expectedResult,
+    std::string_view resultName,
     const T var1,
     const T var2,
     const T result,
@@ -41,14 +42,13 @@ void displayResult(
     const char op
 ) noexcept
 {
-    std::cout << var1 << " (" << var1Name << ") " 
-        << op << ' ' << var2 << " (" << var2Name << ") = "
-        << result << " (" << expectedResult << ")\n";
+    std::println("{} ({}) {} {} ({}) = {:.6f} ({})",
+                var1, var1Name, op, var2, var2Name, result, resultName);
 }
 
 template<typename T>
 void displayResultPercentage(
-    std::string_view expectedResult,
+    std::string_view resultName,
     const T var1,
     const T var2,
     const T result,
@@ -57,14 +57,13 @@ void displayResultPercentage(
     const char op
 ) noexcept
 {
-    std::cout << var1 << " (" << var1Name << ") "
-        << op << ' ' << var2 << " (" << var2Name << ") = "
-        << result << "% (" << expectedResult << ")\n";
+    std::println("{} ({}) {} {} ({}) = {:.6f}% ({})",
+                var1, var1Name, op, var2, var2Name, result, resultName);
 }
 
 template<typename T>
 void displayResultWithFraction(
-    std::string_view expectedResult,
+    std::string_view resultName,
     const double fraction,
     const T var1,
     const T var2,
@@ -75,13 +74,13 @@ void displayResultWithFraction(
     const char op2
 ) noexcept
 {
-    std::cout << fraction << ' ' << op1 << ' ' << var1 << " (" << var1Name <<  ") " << op2
-        << ' ' << var2 << "^2 (" << var2Name << ")" << " = " << result << " (" << expectedResult << ") \n";
+    std::println("{} {} {} ({}) {} {}^2 ({}) = {:.6f} ({})", 
+               fraction, op1, var1, var1Name, op2, var2, var2Name, result, resultName);
 }
 
 template<typename T>
 void displayResultWithTrigonometry(
-    std::string_view expectedResult,
+    std::string_view resultName,
     std::string_view trigonometryVar,
     const T var1,
     const T var2,
@@ -94,14 +93,14 @@ void displayResultWithTrigonometry(
     const char op2
 ) noexcept
 {
-    std::cout << var1 << " (" << var1Name << ") " << op << ' ' << var2
-        << " (" << var2Name << ") " << op2 << ' ' << trigonometryVar << "(" << var3
-            << " (" << var3Name << ")) = " << result << " (" << expectedResult << ")\n";
+    std::println("{} ({}) {} {} ({}) {} {}({}° ({})) = {:.6f} ({})", 
+                var1, var1Name, op, var2, var2Name, op2, trigonometryVar, var3, var3Name,
+                result, resultName);
 }
 
 template<typename T>
 void displayResultThreeVariables(
-    std::string_view expectedResult,
+    std::string_view resultName,
     const T var1,
     const T var2,
     const T var3,
@@ -113,8 +112,28 @@ void displayResultThreeVariables(
     const char op2
 ) noexcept
 {
-    std::cout << var1 << " (" << var1Name << ") " <<
-        op1 << ' ' << var2 << " (" << var2Name << ") "
-        << op2 << ' ' << var3 << " (" << var3Name << ") = "
-        << result << " (" <<  expectedResult << ") \n";
+    std::println("{} ({}) {} {} ({}) {} {} ({}) = {:.6f} ({})", 
+            var1, var1Name, op1, var2, var2Name, op2, var3, var3Name, result, resultName);
+}
+
+template<typename T>
+void displayResultFourVariables(
+    std::string_view resultName,
+    const T var1,
+    const T var2,
+    const T var3,
+    const T var4,
+    const T result,
+    std::string_view var1Name,
+    std::string_view var2Name,
+    std::string_view var3Name,
+    std::string_view var4Name,
+    const char op1,
+    const char op2,
+    const char op3
+)
+{
+    std::println("{} ({}) {} {} ({}) {} {} ({}) {} {} ({}) = {:.6f} ({})",
+            var1, var1Name, op1, var2, var2Name, op2, var3, var3Name, op3, var4, var4Name,
+            result, resultName);
 }

@@ -80,7 +80,7 @@ Energy
 
 Electricity & Magnetism
 
-    Ohm's law (PENDING)
+    Ohm's law (DONE)
 
         voltage = resistance * current
 
@@ -88,21 +88,21 @@ Electricity & Magnetism
 
         resistance = voltage / current
 
-    Electrical power (PENDING)
+    Electrical power (DONE)
 
         power = voltage * current
 
-    Charge (PENDING)
+    Charge (DONE)
 
         charge = current * time
 
-    Coulomb's law (PENDING)
+    Coulomb's law (DONE)
 
         electric force = constant * charge1 * charge2 / distance^2
 
 Waves & Oscillations
 
-    Wave speed (PENDING)
+    Wave speed (CURRENT)
 
         wave speed = frequency * wavelength
 
