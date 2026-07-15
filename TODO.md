@@ -54,7 +54,7 @@ Mechanics (Kinematics & Dynamics)
 
         spring force = spring constant * displacement
 
-    Torque (CURRENT)
+    Torque (DONE)
 
         torque = force * distance
 
@@ -68,7 +68,7 @@ Energy
 
         potential energy = mass * gravity * height
 
-    Heat energy (PENDING)
+    Heat energy (CURRENT)
 
         heat energy = mass * specific heat capacity * temperature change
 
