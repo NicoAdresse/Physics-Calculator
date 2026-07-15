@@ -68,56 +68,28 @@ Physics_Calculator/
 └── TODO.md
 ```
 
-# Expected Output <->
+# How To Contribute <->
 
-Compiling...
+### Before you start
 
-Success!
+Hi, thanks for contributing.
 
-Creating build...
+Take a look at `TODO.md` to see what's already planned; it helps avoid duplicate work.
 
-Success!
+Small fixes (e.g. typos, obvious bugs), start a pull request.
 
-Moving app into build...
+### Project Structure
 
-Success!
+The codebase is structured by namespaces of their specific domain (e.g. `Energy`, `Mechanics`).
 
-Executing application...
+Like this:
 
-------------------------
+```
+include/<Domain>/inc_<name>.hpp     # Declaration
+impl/<Domain>/impl_<name>.cpp       # Implementation
+```
 
-10 (Density | Rho) * 5 (Volume | v) = 50 (Mass | m)
-
-4.5 (Mass | m) / 5.5 (Volume | v) = 0.818182 (Density | Rho)
-
-4 (Mass | m) / 9.4 (Density | Rho) = 0.425532 (Volume | v)
-
-14.2 (Velocity | v) * 5 (Time | t) = 71 (Distance | d)
-
-3.2 (Distance | d) / 6.4 (Velocity | v) = 0.5 (Time | t)
-
-3.4 (Distance | d) / 5.9 (Time | t) = 0.576271 (Velocity | v)
-
-Delta Velocity: 9
-
-9 (Delta Velocity | delta(v)) / 2 (Time | t) = 4.5 (Acceleration | a)
-
-25 (Acceleration | a) * 5 (Time | t) = 125 (Delta Velocity | delta(v))
-
-5.2 (Force | f) / 9.5 (Mass | m) = 0.547368 (Acceleration | a)
-
-9.2 (Mass | m) * 4.4 (Acceleration | a) = 40.48 (Force | f)
-
-9.3 (Force | f) / 5.325 (Acceleration | a) = 1.74648 (Mass | m)
-
-5.5 (Mass | m) * 9.2 (Gravity | g) = 50.6 (Weight)
-
-0.5 * 2.5 (Mass | m) * 5.5^2 (Velocity | v)  = 37.8125
-
-------------------------
-
-Done!
-
+If you're adding a new formula that fits an existing domain, place it there.
 
 
 # License <->
