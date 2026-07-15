@@ -3,7 +3,7 @@
 #include "Mechanics/inc_power.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::PowerFormulas::calculatePower(const double work, const double time)
+void Physics::Mechanics::Power::calculatePower(const double work, const double time)
 {
     const double result{safeDivision(work, time)};
 

@@ -3,7 +3,7 @@
 #include "Mechanics/inc_hookes_law.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::HookesLawFormulas::calculateSpringForce(
+void Physics::Mechanics::HookesLaw::calculateSpringForce(
     const double springConstant,
     const double displacement
 )

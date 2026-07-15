@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class HookesLawFormulas
+        class HookesLaw
         {
             public:
                 void calculateSpringForce(const double springConstant, const double displacement);

@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class PressureFormulas
+        class Pressure
         {
             public:
                 void calculatePressure(const double force, const double area);

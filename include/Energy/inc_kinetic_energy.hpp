@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Energy
     {
-        class KineticEnergyFormulas
+        class KineticEnergy
         {
             public:
                 void calculateKineticEnergy(const double mass, const double velocity);

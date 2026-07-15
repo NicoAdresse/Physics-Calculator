@@ -16,24 +16,28 @@
 
 #include "Energy/inc_kinetic_energy.hpp"
 #include "Energy/inc_potential_energy.hpp"
+#include "Energy/inc_heat_energy.hpp"
+#include "Energy/inc_efficiency.hpp"
 
 
 int main()
 {
-    Physics::Mechanics::DensityFormulas df;
-    Physics::Mechanics::AvgVelocityFormulas avgvf;
-    Physics::Mechanics::AccelerationFormulas accf;
-    Physics::Mechanics::ForceFormulas ff;
-    Physics::Mechanics::WeightFormulas wf;
-    Physics::Mechanics::WorkFormulas wof;
-    Physics::Mechanics::PowerFormulas pf;
-    Physics::Mechanics::MomentumFormulas momf;
-    Physics::Mechanics::PressureFormulas pref;
-    Physics::Mechanics::HookesLawFormulas hlf;
-    Physics::Mechanics::TorqueFormulas tqf;
+    Physics::Mechanics::Density df;
+    Physics::Mechanics::AvgVelocity avgvf;
+    Physics::Mechanics::Acceleration accf;
+    Physics::Mechanics::Force ff;
+    Physics::Mechanics::Weight wf;
+    Physics::Mechanics::Work wof;
+    Physics::Mechanics::Power pf;
+    Physics::Mechanics::Momentum momf;
+    Physics::Mechanics::Pressure pref;
+    Physics::Mechanics::HookesLaw hlf;
+    Physics::Mechanics::Torque tqf;
 
-    Physics::Energy::KineticEnergyFormulas kef;
-    Physics::Energy::PotentialEnergyFormulas pef;
+    Physics::Energy::KineticEnergy kef;
+    Physics::Energy::PotentialEnergy pef;
+    Physics::Energy::HeatEnergy hef;
+    Physics::Energy::Efficiency eff;
 
     std::cout << "=== Mechanics ===\n\n";
 
@@ -71,6 +75,11 @@ int main()
     kef.calculateKineticEnergy(2.5, 5.5);
 
     pef.calculatePotentialEnergy(10.4, 85.1, 1.4);
+
+    hef.calculateHeatEnergy(2.5, 3.5, 10.0, 15.0);
+
+    eff.calculateEfficiencyDecimal(2.4, 10.4);
+    eff.calculateEfficiencyPercentage(2.4, 10.4);
     
     return 0;
 }

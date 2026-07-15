@@ -13,7 +13,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class DensityFormulas
+        class Density
         {
         public:
             void calculateMass(const double rho, const double volume);

@@ -68,11 +68,11 @@ Energy
 
         potential energy = mass * gravity * height
 
-    Heat energy (CURRENT)
+    Heat energy (DONE)
 
         heat energy = mass * specific heat capacity * temperature change
 
-    Efficiency (PENDING)
+    Efficiency (CURRENT)
 
         efficiency = useful output / total input
 

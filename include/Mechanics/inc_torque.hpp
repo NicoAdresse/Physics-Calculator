@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class TorqueFormulas
+        class Torque
         {
             public:
                 void calculateTorque(const double force, const double distance);

@@ -3,7 +3,7 @@
 #include "Mechanics/inc_torque.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::TorqueFormulas::calculateTorque(const double force, const double distance)
+void Physics::Mechanics::Torque::calculateTorque(const double force, const double distance)
 {
     const double result{force * distance};
 

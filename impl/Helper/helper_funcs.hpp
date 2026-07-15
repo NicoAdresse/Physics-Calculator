@@ -16,7 +16,7 @@ template<typename T>
 }
 
 template<typename T>
-[[nodiscard]] T calculateDelta(T initialValue, T finalValue, std::string_view valueName)
+[[nodiscard]] T calculateDelta(T initialValue, T finalValue)
 {
     if (initialValue == 0 || finalValue == 0) {
         std::cerr << "Cannot subtract initialValue or finalValue if they're 0!\n";
@@ -41,7 +41,23 @@ void displayResult(
 {
     std::cout << var1 << " (" << var1Name << ") " 
         << op << ' ' << var2 << " (" << var2Name << ") = "
-        << result << " (" << expectedResult << ")" << '\n';
+        << result << " (" << expectedResult << ")\n";
+}
+
+template<typename T>
+void displayResultPercentage(
+    std::string_view expectedResult,
+    const T var1,
+    const T var2,
+    const T result,
+    std::string_view var1Name,
+    std::string_view var2Name,
+    const char op
+)
+{
+    std::cout << var1 << " (" << var1Name << ") "
+        << op << ' ' << var2 << " (" << var2Name << ") = "
+        << result << "% (" << expectedResult << ")\n";
 }
 
 template<typename T>

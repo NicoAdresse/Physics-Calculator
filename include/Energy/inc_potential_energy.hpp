@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Energy
     {
-        class PotentialEnergyFormulas
+        class PotentialEnergy
         {
             public:
                 void calculatePotentialEnergy(const double mass, const double gravity, const double height);

@@ -11,7 +11,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class PowerFormulas
+        class Power
         {
             public:
                 void calculatePower(const double work, const double time);

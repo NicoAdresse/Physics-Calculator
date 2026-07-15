@@ -3,7 +3,7 @@
 #include "Mechanics/inc_momentum.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::MomentumFormulas::calculateMomentum(const double mass, const double velocity)
+void Physics::Mechanics::Momentum::calculateMomentum(const double mass, const double velocity)
 {
     const double result{mass * velocity};
 

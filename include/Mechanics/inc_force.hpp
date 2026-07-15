@@ -13,7 +13,7 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class ForceFormulas
+        class Force
         {
         public:
             void calculateForce(const double mass, const double acceleration);

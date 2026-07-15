@@ -3,7 +3,7 @@
 #include "Energy/inc_kinetic_energy.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Energy::KineticEnergyFormulas::calculateKineticEnergy(
+void Physics::Energy::KineticEnergy::calculateKineticEnergy(
     const double mass,
     const double velocity
 )

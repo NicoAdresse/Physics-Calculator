@@ -3,7 +3,7 @@
 #include "Mechanics/inc_work.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::WorkFormulas::calculateWork(const double force, const double distance)
+void Physics::Mechanics::Work::calculateWork(const double force, const double distance)
 {
     const double result{force * distance};
 

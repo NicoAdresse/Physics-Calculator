@@ -3,7 +3,7 @@
 #include "Energy/inc_potential_energy.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Energy::PotentialEnergyFormulas::calculatePotentialEnergy(
+void Physics::Energy::PotentialEnergy::calculatePotentialEnergy(
     const double mass,
     const double gravity,
     const double height

@@ -3,7 +3,7 @@
 #include "Mechanics/inc_pressure.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::PressureFormulas::calculatePressure(const double force, const double area)
+void Physics::Mechanics::Pressure::calculatePressure(const double force, const double area)
 {
     const double result{force / area};
 
