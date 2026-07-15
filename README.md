@@ -45,9 +45,8 @@ Physics_Calculator/
 ├── src/
 │   └── main.cpp
 ├── .gitignore
-├── clean.sh
+├── CMakeLists.txt
 ├── LICENSE
-├── make.sh
 ├── README.md
 └── TODO.md
 ```
