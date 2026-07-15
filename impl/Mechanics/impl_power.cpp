@@ -5,7 +5,7 @@
 
 void Physics::Mechanics::PowerFormulas::calculatePower(const double work, const double time)
 {
-    double result{safeDivision(work, time)};
+    const double result{safeDivision(work, time)};
 
     displayResult(
         "Power | p",

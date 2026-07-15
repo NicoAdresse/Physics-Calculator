@@ -8,7 +8,7 @@ void Physics::Mechanics::AvgVelocityFormulas::calculateVelocity(
     const double time
 )
 {
-    double result{safeDivision(distance, time)};
+    const double result{safeDivision(distance, time)};
 
     displayResult(
         "Velocity | v",
@@ -25,7 +25,7 @@ void Physics::Mechanics::AvgVelocityFormulas::calculateDistance(const double vel
     const double time
 )
 {
-    double result{velocity * time};
+    const double result{velocity * time};
 
     displayResult(
         "Distance | d",
@@ -43,7 +43,7 @@ void Physics::Mechanics::AvgVelocityFormulas::calculateTime(
     const double velocity
 )
 {
-    double result{safeDivision(distance, velocity)};
+    const double result{safeDivision(distance, velocity)};
 
     displayResult(
         "Time | t",

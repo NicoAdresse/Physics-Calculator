@@ -5,7 +5,7 @@
 
 void Physics::Mechanics::ForceFormulas::calculateForce(const double mass, const double acceleration)
 {
-    double result{mass * acceleration};
+    const double result{mass * acceleration};
     
     displayResult(
         "Force | f",
@@ -20,7 +20,7 @@ void Physics::Mechanics::ForceFormulas::calculateForce(const double mass, const 
 
 void Physics::Mechanics::ForceFormulas::calculateMass(const double force, const double acceleration)
 {
-    double result{safeDivision(force, acceleration)};
+    const double result{safeDivision(force, acceleration)};
 
     displayResult(
         "Mass | m",

@@ -5,7 +5,7 @@
 
 void Physics::Mechanics::WeightFormulas::calculateWeight(const double mass, const double gravity)
 {
-    double result{mass * gravity};
+    const double result{mass * gravity};
 
     displayResult(
         "Weight | w",

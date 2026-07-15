@@ -5,7 +5,7 @@
 
 void Physics::Mechanics::WorkFormulas::calculateWork(const double force, const double distance)
 {
-    double result{force * distance};
+    const double result{force * distance};
 
     displayResult(
         "Work | wo",

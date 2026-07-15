@@ -9,7 +9,7 @@ void Physics::Energy::PotentialEnergyFormulas::calculatePotentialEnergy(
     const double height
 )
 {
-    double result{mass * gravity * height};
+    const double result{mass * gravity * height};
 
     displayResultThreeVariables(
         "Potential Energy | pe",

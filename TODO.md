@@ -38,11 +38,11 @@ Mechanics (Kinematics & Dynamics)
 
         work = force * distance
 
-    Power (CURRENT)
+    Power (DONE)
 
         power = work / time
 
-    Momentum (PENDING)
+    Momentum (CURRENT)
 
         momentum = mass * velocity
 

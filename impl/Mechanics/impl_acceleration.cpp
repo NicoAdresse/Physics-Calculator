@@ -9,8 +9,8 @@ void Physics::Mechanics::AccelerationFormulas::calculateAcceleration(
     const double time
 )
 {
-    double change{calculateDelta(initialVelocity, finalVelocity, "Velocity")};
-    double result{safeDivision(change, time)};
+    const double change{calculateDelta(initialVelocity, finalVelocity, "Velocity")};
+    const double result{safeDivision(change, time)};
 
     displayResult(
         "Acceleration | a",
