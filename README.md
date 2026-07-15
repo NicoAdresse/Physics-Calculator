@@ -12,6 +12,8 @@ Current Version: v1.0.5
 
 Every class is wrapped in the namespace of their domain.
 
+Every function will have a return value, usually `double`, as it is the datatype of `result`.
+
 # Structure <->
 
 ```
@@ -20,6 +22,8 @@ Physics_Calculator/
 │   └── app
 ├── impl/
 │   ├── Energy/
+│   │   ├── impl_efficiency.cpp
+│   │   ├── impl_heat_energy.cpp
 │   │   ├── impl_kinetic_energy.cpp
 │   │   └── impl_potential_energy.cpp
 │   ├── Helper/
@@ -29,10 +33,17 @@ Physics_Calculator/
 │       ├── impl_avg_velocity.cpp
 │       ├── impl_density.cpp
 │       ├── impl_force.cpp
+│       ├── impl_hookes_law.cpp
+│       ├── impl_momentum.cpp
+│       ├── impl_power.cpp
+│       ├── impl_pressure.cpp
+│       ├── impl_torque.cpp
 │       ├── impl_weight.cpp
 │       └── impl_work.cpp
 ├── include/
 │   ├── Energy/
+│   │   ├── inc_efficiency.hpp
+│   │   ├── inc_heat_energy.hpp
 │   │   ├── inc_kinetic_energy.hpp
 │   │   └── inc_potential_energy.hpp
 │   └── Mechanics/
@@ -40,6 +51,11 @@ Physics_Calculator/
 │       ├── inc_avg_velocity.hpp
 │       ├── inc_density.hpp
 │       ├── inc_force.hpp
+│       ├── inc_hookes_law.hpp
+│       ├── inc_momentum.hpp
+│       ├── inc_power.hpp
+│       ├── inc_pressure.hpp
+│       ├── inc_torque.hpp
 │       ├── inc_weight.hpp
 │       └── inc_work.hpp
 ├── src/
