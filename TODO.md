@@ -72,7 +72,7 @@ Energy
 
         heat energy = mass * specific heat capacity * temperature change
 
-    Efficiency (CURRENT)
+    Efficiency (DONE)
 
         efficiency = useful output / total input
 
