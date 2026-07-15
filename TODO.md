@@ -42,19 +42,19 @@ Mechanics (Kinematics & Dynamics)
 
         power = work / time
 
-    Momentum (CURRENT)
+    Momentum (DONE)
 
         momentum = mass * velocity
 
-    Pressure (PENDING)
+    Pressure (DONE)
 
         pressure = force / area
 
-    Hooke's law (PENDING)
+    Hooke's law (DONE)
 
         spring force = spring constant * displacement
 
-    Torque (PENDING)
+    Torque (CURRENT)
 
         torque = force * distance
 
