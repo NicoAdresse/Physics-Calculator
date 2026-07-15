@@ -57,6 +57,8 @@ Mechanics (Kinematics & Dynamics)
     Torque (DONE)
 
         torque = force * distance
+        
+        (Advanced) torque = force * radius * sine(angle)
 
 Energy
 
