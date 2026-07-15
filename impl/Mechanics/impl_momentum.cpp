@@ -1,26 +1,24 @@
-// impl/Energy/impl_kinetic_energy.cpp
+// impl/Mechanics/impl_momentum.cpp
 
-#include "Energy/inc_kinetic_energy.hpp"
+#include "Mechanics/inc_momentum.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-double Physics::Energy::KineticEnergy::calculateKineticEnergy(
+double Physics::Mechanics::Momentum::calculateMomentum(
     const double mass,
     const double velocity,
     const bool willDisplayResult
 )
 {
-    const double result{(0.5 * mass) * (velocity * velocity)};
+    const double result{mass * velocity};
 
     if (willDisplayResult) {
-        displayResultWithFraction(
-            "Kinetic Energy | ke",
-            0.5,
+        displayResult(
+            "Momentum | mom",
             mass,
             velocity,
             result,
             "Mass | m",
             "Velocity | v",
-            '*',
             '*'
         );
     }

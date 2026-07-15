@@ -1,26 +1,31 @@
 // impl/Energy/impl_potential_energy.cpp
 
-#include "../../include/Energy/inc_potential_energy.hpp"
+#include "Energy/inc_potential_energy.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Energy::PotentialEnergyFormulas::calculatePotentialEnergy(
+double Physics::Energy::PotentialEnergy::calculatePotentialEnergy(
     const double mass,
     const double gravity,
-    const double height
+    const double height,
+    const bool willDisplayResult
 )
 {
-    double result{mass * gravity * height};
+    const double result{mass * gravity * height};
 
-    displayResultThreeVariables(
-        "Potential Energy | pe",
-        mass,
-        gravity,
-        height,
-        result,
-        "Mass | m",
-        "Gravity | g",
-        "Height | h",
-        '*',
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResultThreeVariables(
+            "Potential Energy | pe",
+            mass,
+            gravity,
+            height,
+            result,
+            "Mass | m",
+            "Gravity | g",
+            "Height | h",
+            '*',
+            '*'
+        );
+    }
+
+    return result;
 }

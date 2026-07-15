@@ -13,12 +13,12 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class AvgVelocityFormulas
+        class AvgVelocity
         {
         public:
-            void calculateVelocity(const double distance, const double time);
-            void calculateDistance(const double velocity, const double time);
-            void calculateTime(const double distance, const double velocity);
+            double calculateVelocity(const double distance, const double time, const bool willDisplayResult);
+            double calculateDistance(const double velocity, const double time, const bool willDisplayResult);
+            double calculateTime(const double distance, const double velocity, const bool willDisplayResult);
         };
     }
 }

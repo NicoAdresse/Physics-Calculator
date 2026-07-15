@@ -11,10 +11,10 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class WorkFormulas
+        class Work
         {
             public:
-                void calculateWork(const double force, const double distance);
+                double calculateWork(const double force, const double distance, const bool willDisplayResult);
         };
     }
 }

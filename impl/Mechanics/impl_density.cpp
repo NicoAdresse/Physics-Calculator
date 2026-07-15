@@ -3,47 +3,70 @@
 #include "Mechanics/inc_density.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::DensityFormulas::calculateMass(const double rho, const double volume)
+double Physics::Mechanics::Density::calculateMass(
+    const double rho,
+    const double volume,
+    const bool willDisplayResult
+)
 {
     const double result{rho * volume};
 
-    displayResult(
-        "Mass | m",
-        rho,
-        volume,
-        result,
-        "Density | Rho",
-        "Volume | v",
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Mass | m",
+            rho,
+            volume,
+            result,
+            "Density | Rho",
+            "Volume | v",
+            '*'
+        );
+    }
+
+    return result;
 }
 
-void Physics::Mechanics::DensityFormulas::calculateRho(const double mass, const double volume)
+double Physics::Mechanics::Density::calculateRho(
+    const double mass,
+    const double volume,
+    const bool willDisplayResult
+)
 {
     const double result{safeDivision(mass, volume)};
 
-    displayResult(
-        "Density | Rho",
-        mass,
-        volume,
-        result,
-        "Mass | m",
-        "Volume | v",
-        '/'
-    );
-}
+    if (willDisplayResult) {
+        displayResult(
+            "Density | Rho",
+            mass,
+            volume,
+            result,
+            "Mass | m",
+            "Volume | v",
+            '/'
+        );
+    }
 
-void Physics::Mechanics::DensityFormulas::calculateVolume(const double rho, const double mass)
+    return result;
+}
+double Physics::Mechanics::Density::calculateVolume(
+    const double rho,
+    const double mass,
+    const bool willDisplayResult
+)
 {
     const double result{safeDivision(mass, rho)};
 
-    displayResult(
-        "Volume | v",
-        mass,
-        rho,
-        result,
-        "Mass | m",
-        "Density | Rho",
-        '/'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Volume | v",
+            mass,
+            rho,
+            result,
+            "Mass | m",
+            "Density | Rho",
+            '/'
+        );
+    }
+
+    return result;
 }

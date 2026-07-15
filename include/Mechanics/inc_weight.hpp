@@ -11,10 +11,10 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class WeightFormulas
+        class Weight
         {
         public:
-            void calculateWeight(const double mass, const double gravity);
+            double calculateWeight(const double mass, const double gravity, const bool willDisplayResult);
         };
     }
 }

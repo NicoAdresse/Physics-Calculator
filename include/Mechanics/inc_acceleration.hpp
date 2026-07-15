@@ -12,11 +12,21 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class AccelerationFormulas
+        class Acceleration
         {
         public:
-            void calculateAcceleration(double initialVelocity, double finalVelocity, const double time);
-            void calculateVelocityChange(const double acceleration, const double time);
+            double calculateAcceleration(
+                const double initialVelocity,
+                const double finalVelocity,
+                const double time,
+                const bool willDisplayResult
+            );
+
+            double calculateVelocityChange(
+                const double acceleration,
+                const double time,
+                const bool willDisplayResult
+            );
         };
     }
 }

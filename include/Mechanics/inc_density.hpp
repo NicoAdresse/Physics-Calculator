@@ -13,12 +13,12 @@ namespace Physics
 {
     namespace Mechanics
     {
-        class DensityFormulas
+        class Density
         {
         public:
-            void calculateMass(const double rho, const double volume);
-            void calculateVolume(const double rho, const double mass);
-            void calculateRho(const double mass, const double volume);
+            double calculateMass(const double rho, const double volume, const bool willDisplayResult);
+            double calculateVolume(const double rho, const double mass, const bool willDisplayResult);
+            double calculateRho(const double mass, const double volume, const bool willDisplayResult);
         };
     }
 }

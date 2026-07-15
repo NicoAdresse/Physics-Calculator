@@ -38,23 +38,23 @@ Mechanics (Kinematics & Dynamics)
 
         work = force * distance
 
-    Power (CURRENT)
+    Power (DONE)
 
         power = work / time
 
-    Momentum (PENDING)
+    Momentum (DONE)
 
         momentum = mass * velocity
 
-    Pressure (PENDING)
+    Pressure (DONE)
 
         pressure = force / area
 
-    Hooke's law (PENDING)
+    Hooke's law (DONE)
 
         spring force = spring constant * displacement
 
-    Torque (PENDING)
+    Torque (DONE)
 
         torque = force * distance
 
@@ -68,11 +68,11 @@ Energy
 
         potential energy = mass * gravity * height
 
-    Heat energy (PENDING)
+    Heat energy (DONE)
 
         heat energy = mass * specific heat capacity * temperature change
 
-    Efficiency (PENDING)
+    Efficiency (DONE)
 
         efficiency = useful output / total input
 
@@ -131,3 +131,6 @@ Rotational Dynamics
     Angular acceleration (PENDING)
 
         angular acceleration = angular velocity change / time
+
+
+After everything is done, we should wrap it around in python function with pybind11.

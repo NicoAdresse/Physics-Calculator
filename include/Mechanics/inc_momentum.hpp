@@ -1,20 +1,20 @@
-// include/Energy/inc_kinetic_energy.hpp
+// include/Mechanics/inc_momentum.hpp
 
 #pragma once
 
 /*
-Formulas (Kinetic Energy):
-    kinetic energy = 0.5 * mass * velocity ^ 2 (ke = 0.5 * m * v ^ 2)
+Formulas (Momentum):
+    momentum = mass * velocity (mom = m * v)
 */
 
 namespace Physics
 {
-    namespace Energy
+    namespace Mechanics
     {
-        class KineticEnergy
+        class Momentum
         {
             public:
-                double calculateKineticEnergy(
+                double calculateMomentum(
                     const double mass,
                     const double velocity,
                     const bool willDisplayResult
