@@ -39,7 +39,7 @@ void displayResult(
     std::string_view var1Name,
     std::string_view var2Name,
     const char op
-)
+) noexcept
 {
     std::cout << var1 << " (" << var1Name << ") " 
         << op << ' ' << var2 << " (" << var2Name << ") = "
@@ -55,7 +55,7 @@ void displayResultPercentage(
     std::string_view var1Name,
     std::string_view var2Name,
     const char op
-)
+) noexcept
 {
     std::cout << var1 << " (" << var1Name << ") "
         << op << ' ' << var2 << " (" << var2Name << ") = "
@@ -73,7 +73,7 @@ void displayResultWithFraction(
     std::string_view var2Name,
     const char op1,
     const char op2
-)
+) noexcept
 {
     std::cout << fraction << ' ' << op1 << ' ' << var1 << " (" << var1Name <<  ") " << op2
         << ' ' << var2 << "^2 (" << var2Name << ")" << " = " << result << " (" << expectedResult << ") \n";
@@ -92,7 +92,7 @@ void displayResultWithTrigonometry(
     std::string_view var3Name,
     const char op,
     const char op2
-)
+) noexcept
 {
     std::cout << var1 << " (" << var1Name << ") " << op << ' ' << var2
         << " (" << var2Name << ") " << op2 << ' ' << trigonometryVar << "(" << var3
@@ -111,7 +111,7 @@ void displayResultThreeVariables(
     std::string_view var3Name,
     const char op1,
     const char op2
-)
+) noexcept
 {
     std::cout << var1 << " (" << var1Name << ") " <<
         op1 << ' ' << var2 << " (" << var2Name << ") "
