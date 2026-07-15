@@ -41,45 +41,51 @@ int main()
 
     std::cout << "=== Mechanics ===\n\n";
 
-    df.calculateMass(10.0, 5.0);
-    df.calculateRho(4.5, 5.5);
-    df.calculateVolume(9.4, 4.0);
+    df.calculateMass(10.0, 5.0, true);
+    df.calculateRho(4.5, 5.5, true);
+    df.calculateVolume(9.4, 4.0, true);
 
-    avgvf.calculateDistance(14.2, 5.0);
-    avgvf.calculateTime(3.2, 6.4);
-    avgvf.calculateVelocity(3.4, 5.9);
+    avgvf.calculateDistance(14.2, 5.0, true);
+    avgvf.calculateTime(3.2, 6.4, true);
+    avgvf.calculateVelocity(3.4, 5.9, true);
 
-    accf.calculateAcceleration(1.0, 10.0, 2.0);
-    accf.calculateVelocityChange(25.0, 5.0);
+    accf.calculateAcceleration(1.0, 10.0, 2.0, true);
+    accf.calculateVelocityChange(25.0, 5.0, true);
 
-    ff.calculateAcceleration(5.2, 9.5);
-    ff.calculateForce(9.2, 4.4);
-    ff.calculateMass(9.3, 5.325);
+    ff.calculateAcceleration(5.2, 9.5, true);
+    ff.calculateForce(9.2, 4.4, true);
+    ff.calculateMass(9.3, 5.325, true);
 
-    wf.calculateWeight(5.5, 9.2);
+    wf.calculateWeight(5.5, 9.2, true);
 
-    wof.calculateWork(25.2, 1.5);
+    wof.calculateWork(25.2, 1.5, true);
 
-    pf.calculatePower(1.5, 4.2);
+    pf.calculatePower(1.5, 4.2, true);
 
-    momf.calculateMomentum(15.2, 5.2);
+    momf.calculateMomentum(15.2, 5.2, true);
 
-    pref.calculatePressure(32.6, 952.1);
+    pref.calculatePressure(32.6, 952.1, true);
 
-    hlf.calculateSpringForce(4.2, 89.99);
+    hlf.calculateSpringForce(4.2, 89.99, true);
     
-    tqf.calculateTorque(5.2, 86.2);
+    tqf.calculateTorqueSimplified(5.2, 86.2, true);
+    tqf.calculateTorque(10.5, 2.5, 5.5, true);
 
     std::cout << "\n=== Energy ===\n";
 
-    kef.calculateKineticEnergy(2.5, 5.5);
+    kef.calculateKineticEnergy(2.5, 5.5, true);
 
-    pef.calculatePotentialEnergy(10.4, 85.1, 1.4);
+    pef.calculatePotentialEnergy(10.4, 85.1, 1.4, true);
 
-    hef.calculateHeatEnergy(2.5, 3.5, 10.0, 15.0);
+    hef.calculateHeatEnergy(2.5, 3.5, 10.0, 15.0, true);
 
-    eff.calculateEfficiencyDecimal(2.4, 10.4);
-    eff.calculateEfficiencyPercentage(2.4, 10.4);
+    eff.calculateEfficiencyDecimal(2.4, 10.4, true);
+    eff.calculateEfficiencyPercentage(2.4, 10.4, true);
+
+    std::cout << "\n=== Experimental ===\n";
+
+    const double dfResult{df.calculateMass(10.0, 2.0, false)};
+    std::cout << dfResult + 5.0 << '\n';
     
     return 0;
 }

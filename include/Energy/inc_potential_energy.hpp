@@ -14,7 +14,12 @@ namespace Physics
         class PotentialEnergy
         {
             public:
-                void calculatePotentialEnergy(const double mass, const double gravity, const double height);
+                double calculatePotentialEnergy(
+                    const double mass,
+                    const double gravity,
+                    const double height,
+                    const bool willDisplayResult
+                );
         };
     }
 }

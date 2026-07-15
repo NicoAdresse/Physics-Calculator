@@ -14,8 +14,17 @@ namespace Physics
         class Efficiency
         {
             public:
-                void calculateEfficiencyDecimal(const double usefulOutput, const double totalInput);
-                void calculateEfficiencyPercentage(const double usefulOutput, const double totalInput);
+                double calculateEfficiencyDecimal(
+                    const double usefulOutput,
+                    const double totalInput,
+                    const bool willDisplayResult
+                );
+
+                double calculateEfficiencyPercentage(
+                    const double usefulOutput,
+                    const double totalInput,
+                    const bool willDisplayResult
+                );
         };
     }
 }

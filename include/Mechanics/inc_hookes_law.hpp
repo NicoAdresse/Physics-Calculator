@@ -14,7 +14,11 @@ namespace Physics
         class HookesLaw
         {
             public:
-                void calculateSpringForce(const double springConstant, const double displacement);
+                double calculateSpringForce(
+                    const double springConstant,
+                    const double displacement,
+                    const bool willDisplayResult
+                );
         };
     }
 }

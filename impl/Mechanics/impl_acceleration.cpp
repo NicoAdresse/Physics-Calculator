@@ -3,40 +3,50 @@
 #include "Mechanics/inc_acceleration.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::Acceleration::calculateAcceleration(
+double Physics::Mechanics::Acceleration::calculateAcceleration(
     double initialVelocity,
     double finalVelocity,
-    const double time
+    const double time,
+    const bool willDisplayResult
 )
 {
     const double change{calculateDelta(initialVelocity, finalVelocity)};
     const double result{safeDivision(change, time)};
 
-    displayResult(
-        "Acceleration | a",
-        change,
-        time,
-        result,
-        "Delta Velocity | delta(v)",
-        "Time | t",
-        '/'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Acceleration | a",
+            change,
+            time,
+            result,
+            "Delta Velocity | delta(v)",
+            "Time | t",
+            '/'
+        );
+    }
+
+    return result;
 }
 
-void Physics::Mechanics::Acceleration::calculateVelocityChange(
+double Physics::Mechanics::Acceleration::calculateVelocityChange(
     const double acceleration,
-    const double time
+    const double time,
+    const bool willDisplayResult
 )
 {
     double result{acceleration * time};
 
-    displayResult(
-        "Delta Velocity | delta(v)",
-        acceleration,
-        time,
-        result,
-        "Acceleration | a",
-        "Time | t",
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Delta Velocity | delta(v)",
+            acceleration,
+            time,
+            result,
+            "Acceleration | a",
+            "Time | t",
+            '*'
+        );
+    }
+
+    return result;
 }

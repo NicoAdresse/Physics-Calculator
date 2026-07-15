@@ -3,20 +3,25 @@
 #include "Mechanics/inc_hookes_law.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::HookesLaw::calculateSpringForce(
+double Physics::Mechanics::HookesLaw::calculateSpringForce(
     const double springConstant,
-    const double displacement
+    const double displacement,
+    const bool willDisplayResult
 )
 {
     const double result{springConstant * displacement};
 
-    displayResult(
-        "Spring Force | spf",
-        springConstant,
-        displacement,
-        result,
-        "Spring Constant | spc",
-        "Displacement | di",
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Spring Force | spf",
+            springConstant,
+            displacement,
+            result,
+            "Spring Constant | spc",
+            "Displacement | di",
+            '*'
+        );
+    }
+
+    return result;
 }

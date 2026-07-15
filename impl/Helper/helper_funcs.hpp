@@ -4,6 +4,8 @@
 #include <expected>
 #include <iostream>
 
+const double PI{3.14159265358979323846};
+
 template<typename T>
 [[nodiscard]] T safeDivision(T num1, T num2)
 {
@@ -75,6 +77,26 @@ void displayResultWithFraction(
 {
     std::cout << fraction << ' ' << op1 << ' ' << var1 << " (" << var1Name <<  ") " << op2
         << ' ' << var2 << "^2 (" << var2Name << ")" << " = " << result << " (" << expectedResult << ") \n";
+}
+
+template<typename T>
+void displayResultWithTrigonometry(
+    std::string_view expectedResult,
+    std::string_view trigonometryVar,
+    const T var1,
+    const T var2,
+    const T var3,
+    const T result,
+    std::string_view var1Name,
+    std::string_view var2Name,
+    std::string_view var3Name,
+    const char op,
+    const char op2
+)
+{
+    std::cout << var1 << " (" << var1Name << ") " << op << ' ' << var2
+        << " (" << var2Name << ") " << op2 << ' ' << trigonometryVar << "(" << var3
+            << " (" << var3Name << ")) = " << result << " (" << expectedResult << ")\n";
 }
 
 template<typename T>

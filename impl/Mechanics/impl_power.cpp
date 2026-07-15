@@ -3,17 +3,25 @@
 #include "Mechanics/inc_power.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::Power::calculatePower(const double work, const double time)
+double Physics::Mechanics::Power::calculatePower(
+    const double work,
+    const double time,
+    const bool willDisplayResult
+)
 {
     const double result{safeDivision(work, time)};
 
-    displayResult(
-        "Power | p",
-        work,
-        time,
-        result,
-        "Work | wo",
-        "Time | t",
-        '/'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Power | p",
+            work,
+            time,
+            result,
+            "Work | wo",
+            "Time | t",
+            '/'
+        );
+    }
+
+    return result;
 }

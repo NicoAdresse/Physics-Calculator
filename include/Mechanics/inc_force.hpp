@@ -16,9 +16,9 @@ namespace Physics
         class Force
         {
         public:
-            void calculateForce(const double mass, const double acceleration);
-            void calculateMass(const double force, const double acceleration);
-            void calculateAcceleration(const double force, const double mass);
+            double calculateForce(const double mass, const double acceleration, const bool willDisplayResult);
+            double calculateMass(const double force, const double acceleration, const bool willDisplayResult);
+            double calculateAcceleration(const double force, const double mass, const bool willDisplayResult);
         };
     }
 }

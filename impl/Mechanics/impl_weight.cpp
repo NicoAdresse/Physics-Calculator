@@ -3,17 +3,25 @@
 #include "Mechanics/inc_weight.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::Weight::calculateWeight(const double mass, const double gravity)
+double Physics::Mechanics::Weight::calculateWeight(
+    const double mass,
+    const double gravity,
+    const bool willDisplayResult
+)
 {
     const double result{mass * gravity};
 
-    displayResult(
-        "Weight | w",
-        mass,
-        gravity,
-        result,
-        "Mass | m",
-        "Gravity | g",
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Weight | w",
+            mass,
+            gravity,
+            result,
+            "Mass | m",
+            "Gravity | g",
+            '*'
+        );
+    }
+
+    return result;
 }

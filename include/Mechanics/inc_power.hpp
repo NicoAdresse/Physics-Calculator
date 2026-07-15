@@ -14,7 +14,7 @@ namespace Physics
         class Power
         {
             public:
-                void calculatePower(const double work, const double time);
+                double calculatePower(const double work, const double time, const bool willDisplayResult);
         };
     }
 }

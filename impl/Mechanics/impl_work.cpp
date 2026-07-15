@@ -3,17 +3,25 @@
 #include "Mechanics/inc_work.hpp"
 #include "../Helper/helper_funcs.hpp"
 
-void Physics::Mechanics::Work::calculateWork(const double force, const double distance)
+double Physics::Mechanics::Work::calculateWork(
+    const double force,
+    const double distance,
+    const bool willDisplayResult
+)
 {
     const double result{force * distance};
 
-    displayResult(
-        "Work | wo",
-        force,
-        distance,
-        result,
-        "Force | f",
-        "Distance | d",
-        '*'
-    );
+    if (willDisplayResult) {
+        displayResult(
+            "Work | wo",
+            force,
+            distance,
+            result,
+            "Force | f",
+            "Distance | d",
+            '*'
+        );
+    }
+
+    return result;
 }

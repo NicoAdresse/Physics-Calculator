@@ -14,7 +14,10 @@ namespace Physics
         class Pressure
         {
             public:
-                void calculatePressure(const double force, const double area);
+                double calculatePressure(
+                    const double force,
+                    const double area,
+                    const bool willDisplayResult);
         };
     }
 }

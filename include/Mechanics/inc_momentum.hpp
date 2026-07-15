@@ -14,7 +14,11 @@ namespace Physics
         class Momentum
         {
             public:
-                void calculateMomentum(const double mass, const double velocity);
+                double calculateMomentum(
+                    const double mass,
+                    const double velocity,
+                    const bool willDisplayResult
+                );
         };
     }
 }

@@ -14,8 +14,13 @@ namespace Physics
         class HeatEnergy
         {
             public:
-                void calculateHeatEnergy(const double mass, const double specificHeatCapacity,
-                    const double initialTemperature, const double finalTemperature);
+                double calculateHeatEnergy(
+                    const double mass,
+                    const double specificHeatCapacity,
+                    const double initialTemperature,
+                    const double finalTemperature,
+                    const bool willDisplayResult
+                );
         };
     }
 }
