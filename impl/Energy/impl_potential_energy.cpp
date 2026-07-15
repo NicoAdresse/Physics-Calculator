@@ -1,6 +1,6 @@
 // impl/Energy/impl_potential_energy.cpp
 
-#include "../../include/Energy/inc_potential_energy.hpp"
+#include "Energy/inc_potential_energy.hpp"
 #include "../Helper/helper_funcs.hpp"
 
 void Physics::Energy::PotentialEnergyFormulas::calculatePotentialEnergy(

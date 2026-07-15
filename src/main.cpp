@@ -6,6 +6,8 @@
 #include "Mechanics/inc_force.hpp"
 #include "Mechanics/inc_weight.hpp"
 #include "Mechanics/inc_work.hpp"
+#include "Mechanics/inc_power.hpp"
+
 #include "Energy/inc_kinetic_energy.hpp"
 #include "Energy/inc_potential_energy.hpp"
 
@@ -18,6 +20,7 @@ int main()
     Physics::Mechanics::ForceFormulas ff;
     Physics::Mechanics::WeightFormulas wf;
     Physics::Mechanics::WorkFormulas wof;
+    Physics::Mechanics::PowerFormulas pf;
 
     Physics::Energy::KineticEnergyFormulas kef;
     Physics::Energy::PotentialEnergyFormulas pef;
@@ -44,6 +47,8 @@ int main()
     pef.calculatePotentialEnergy(10.4, 85.1, 1.4);
 
     wof.calculateWork(25.2, 1.5);
+
+    pf.calculatePower(1.5, 4.2);
     
     return 0;
 }
