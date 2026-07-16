@@ -24,6 +24,10 @@
 #include "Electricity/inc_charge.hpp"
 #include "Electricity/inc_coulombs_law.hpp"
 
+#include "Waves/inc_wave_speed.hpp"
+#include "Waves/inc_frequency.hpp"
+#include "Waves/inc_period.hpp"
+
 int main()
 {
     Physics::Mechanics::Density df;
@@ -47,6 +51,10 @@ int main()
     Physics::Electricity::Power epf;
     Physics::Electricity::Charge chf;
     Physics::Electricity::CoulombsLaw cllf;
+
+    Physics::Waves::WaveSpeed wsf;
+    Physics::Waves::Frequency frf;
+    Physics::Waves::Period perf;
 
     std::println("=== Mechanics ===\n");
 
@@ -102,6 +110,12 @@ int main()
     chf.calculateCharge(4.5, 6.9, true);
 
     cllf.calculateElectricForce(3.5, 9.5, 9.5, 16.2, true);
+
+    std::println("\n=== Waves ===");
+
+    wsf.calculateWaveSpeed(3.4, 2.5, true);
+    frf.calculateFrequency(4.3, true);
+    perf.calculatePeriod(9.2, true);
 
     std::println("\n=== Experimental ===");
 

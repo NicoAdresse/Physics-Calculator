@@ -19,10 +19,33 @@ Every function will have a return value, usually `double`, as it is the datatype
 ```
 Physics-Calculator/
 ├── build/
-├── CMakeLists.txt
-├── LICENSE
-├── README.md
-├── TODO.md
+├── include/
+│   ├── Electricity/
+│   │   ├── inc_charge.hpp
+│   │   ├── inc_coulombs_law.hpp
+│   │   ├── inc_ohms_law.hpp
+│   │   └── inc_power.hpp
+│   ├── Energy/
+│   │   ├── inc_efficiency.hpp
+│   │   ├── inc_heat_energy.hpp
+│   │   ├── inc_kinetic_energy.hpp
+│   │   └── inc_potential_energy.hpp
+│   ├── Mechanics/
+│   │   ├── inc_acceleration.hpp
+│   │   ├── inc_avg_velocity.hpp
+│   │   ├── inc_density.hpp
+│   │   ├── inc_force.hpp
+│   │   ├── inc_hookes_law.hpp
+│   │   ├── inc_momentum.hpp
+│   │   ├── inc_power.hpp
+│   │   ├── inc_pressure.hpp
+│   │   ├── inc_torque.hpp
+│   │   ├── inc_weight.hpp
+│   │   └── inc_work.hpp
+│   └── Waves/
+│       ├── inc_frequency.hpp
+│       ├── inc_period.hpp
+│       └── inc_wave_speed.hpp
 ├── impl/
 │   ├── Electricity/
 │   │   ├── impl_charge.cpp
@@ -36,43 +59,28 @@ Physics-Calculator/
 │   │   └── impl_potential_energy.cpp
 │   ├── Helper/
 │   │   └── helper_funcs.hpp
-│   └── Mechanics/
-│       ├── impl_acceleration.cpp
-│       ├── impl_avg_velocity.cpp
-│       ├── impl_density.cpp
-│       ├── impl_force.cpp
-│       ├── impl_hookes_law.cpp
-│       ├── impl_momentum.cpp
-│       ├── impl_power.cpp
-│       ├── impl_pressure.cpp
-│       ├── impl_torque.cpp
-│       ├── impl_weight.cpp
-│       └── impl_work.cpp
-├── include/
-│   ├── Electricity/
-│   │   ├── inc_charge.hpp
-│   │   ├── inc_coulombs_law.hpp
-│   │   ├── inc_ohms_law.hpp
-│   │   └── inc_power.hpp
-│   ├── Energy/
-│   │   ├── inc_efficiency.hpp
-│   │   ├── inc_heat_energy.hpp
-│   │   ├── inc_kinetic_energy.hpp
-│   │   └── inc_potential_energy.hpp
-│   └── Mechanics/
-│       ├── inc_acceleration.hpp
-│       ├── inc_avg_velocity.hpp
-│       ├── inc_density.hpp
-│       ├── inc_force.hpp
-│       ├── inc_hookes_law.hpp
-│       ├── inc_momentum.hpp
-│       ├── inc_power.hpp
-│       ├── inc_pressure.hpp
-│       ├── inc_torque.hpp
-│       ├── inc_weight.hpp
-│       └── inc_work.hpp
-└── src/
-    └── main.cpp
+│   ├── Mechanics/
+│   │   ├── impl_acceleration.cpp
+│   │   ├── impl_avg_velocity.cpp
+│   │   ├── impl_density.cpp
+│   │   ├── impl_force.cpp
+│   │   ├── impl_hookes_law.cpp
+│   │   ├── impl_momentum.cpp
+│   │   ├── impl_power.cpp
+│   │   ├── impl_pressure.cpp
+│   │   ├── impl_torque.cpp
+│   │   ├── impl_weight.cpp
+│   │   └── impl_work.cpp
+│   └── Waves/
+│       ├── impl_frequency.cpp
+│       ├── impl_period.cpp
+│       └── impl_wave_speed.cpp
+├── src/
+│   └── main.cpp
+├── CMakeLists.txt
+├── LICENSE
+├── README.md
+└── TODO.md
 ```
 
 # How To Contribute <->

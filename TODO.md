@@ -102,15 +102,15 @@ Electricity & Magnetism
 
 Waves & Oscillations
 
-    Wave speed (CURRENT)
+    Wave speed (DONE)
 
         wave speed = frequency * wavelength
 
-    Frequency (PENDING)
+    Frequency (DONE)
 
         frequency = 1 / period
 
-    Period (PENDING)
+    Period (DONE)
 
         period = 1 / frequency
 
