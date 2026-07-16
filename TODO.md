@@ -133,6 +133,3 @@ Rotational Dynamics
     Angular acceleration (PENDING)
 
         angular acceleration = angular velocity change / time
-
-
-After everything is done, we should wrap it around in python function with pybind11.
