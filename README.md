@@ -7,7 +7,7 @@ Created by: NicoLuaJIT/NicoAdresse (Nico Erdmann) on 12.07.2026 (Sunday)
 This is a hobby project. It was meant for me to practice my handling of codebases and my Git.
 
 Take everything here with a grain of salt.
-k
+
 Current Version: v1.0.6
 
 Every class is wrapped in the namespace of their domain.
