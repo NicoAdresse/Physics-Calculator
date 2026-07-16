@@ -7,7 +7,7 @@ Created by: NicoLuaJIT/NicoAdresse (Nico Erdmann) on 12.07.2026 (Sunday)
 This is a hobby project. It was meant for me to practice my handling of codebases and my Git.
 
 Take everything here with a grain of salt.
-
+k
 Current Version: v1.0.6
 
 Every class is wrapped in the namespace of their domain.
@@ -17,10 +17,18 @@ Every function will have a return value, usually `double`, as it is the datatype
 # Structure <->
 
 ```
-Physics_Calculator/
+Physics-Calculator/
 ├── build/
-│   └── app
+├── CMakeLists.txt
+├── LICENSE
+├── README.md
+├── TODO.md
 ├── impl/
+│   ├── Electricity/
+│   │   ├── impl_charge.cpp
+│   │   ├── impl_coulombs_law.cpp
+│   │   ├── impl_ohms_law.cpp
+│   │   └── impl_power.cpp
 │   ├── Energy/
 │   │   ├── impl_efficiency.cpp
 │   │   ├── impl_heat_energy.cpp
@@ -41,6 +49,11 @@ Physics_Calculator/
 │       ├── impl_weight.cpp
 │       └── impl_work.cpp
 ├── include/
+│   ├── Electricity/
+│   │   ├── inc_charge.hpp
+│   │   ├── inc_coulombs_law.hpp
+│   │   ├── inc_ohms_law.hpp
+│   │   └── inc_power.hpp
 │   ├── Energy/
 │   │   ├── inc_efficiency.hpp
 │   │   ├── inc_heat_energy.hpp
@@ -58,13 +71,8 @@ Physics_Calculator/
 │       ├── inc_torque.hpp
 │       ├── inc_weight.hpp
 │       └── inc_work.hpp
-├── src/
-│   └── main.cpp
-├── .gitignore
-├── CMakeLists.txt
-├── LICENSE
-├── README.md
-└── TODO.md
+└── src/
+    └── main.cpp
 ```
 
 # How To Contribute <->
