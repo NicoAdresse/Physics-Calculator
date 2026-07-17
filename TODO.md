@@ -130,6 +130,6 @@ Rotational Dynamics
 
         angular velocity = angle / time
 
-    Angular acceleration (DINE)
+    Angular acceleration (DONE)
 
         angular acceleration = angular velocity change / time
