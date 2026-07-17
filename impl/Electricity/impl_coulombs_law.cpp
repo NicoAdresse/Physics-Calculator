@@ -24,7 +24,7 @@ double Physics::Electricity::CoulombsLaw::calculateElectricForce(
             "Constant | con",
             "Charge 1 | ch1",
             "Charge 2 | ch2",
-            "Distance | d",
+            "Distance^2 | d^2",
             '*',
             '*',
             '/'
