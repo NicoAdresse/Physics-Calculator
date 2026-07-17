@@ -19,33 +19,7 @@ Every function will have a return value, usually `double`, as it is the datatype
 ```
 Physics-Calculator/
 ├── build/
-├── include/
-│   ├── Electricity/
-│   │   ├── inc_charge.hpp
-│   │   ├── inc_coulombs_law.hpp
-│   │   ├── inc_ohms_law.hpp
-│   │   └── inc_power.hpp
-│   ├── Energy/
-│   │   ├── inc_efficiency.hpp
-│   │   ├── inc_heat_energy.hpp
-│   │   ├── inc_kinetic_energy.hpp
-│   │   └── inc_potential_energy.hpp
-│   ├── Mechanics/
-│   │   ├── inc_acceleration.hpp
-│   │   ├── inc_avg_velocity.hpp
-│   │   ├── inc_density.hpp
-│   │   ├── inc_force.hpp
-│   │   ├── inc_hookes_law.hpp
-│   │   ├── inc_momentum.hpp
-│   │   ├── inc_power.hpp
-│   │   ├── inc_pressure.hpp
-│   │   ├── inc_torque.hpp
-│   │   ├── inc_weight.hpp
-│   │   └── inc_work.hpp
-│   └── Waves/
-│       ├── inc_frequency.hpp
-│       ├── inc_period.hpp
-│       └── inc_wave_speed.hpp
+├── CMakeLists.txt
 ├── impl/
 │   ├── Electricity/
 │   │   ├── impl_charge.cpp
@@ -57,6 +31,8 @@ Physics-Calculator/
 │   │   ├── impl_heat_energy.cpp
 │   │   ├── impl_kinetic_energy.cpp
 │   │   └── impl_potential_energy.cpp
+│   ├── Gravity/
+│   │   └── impl_gravitational_force.cpp
 │   ├── Helper/
 │   │   └── helper_funcs.hpp
 │   ├── Mechanics/
@@ -71,15 +47,51 @@ Physics-Calculator/
 │   │   ├── impl_torque.cpp
 │   │   ├── impl_weight.cpp
 │   │   └── impl_work.cpp
+│   ├── Rotational_Dynamics/
+│   │   ├── impl_angular_acceleration.cpp
+│   │   ├── impl_angular_velocity.cpp
+│   │   └── impl_rotational_energy.cpp
 │   └── Waves/
 │       ├── impl_frequency.cpp
 │       ├── impl_period.cpp
 │       └── impl_wave_speed.cpp
-├── src/
-│   └── main.cpp
-├── CMakeLists.txt
+├── include/
+│   ├── Electricity/
+│   │   ├── inc_charge.hpp
+│   │   ├── inc_coulombs_law.hpp
+│   │   ├── inc_ohms_law.hpp
+│   │   └── inc_power.hpp
+│   ├── Energy/
+│   │   ├── inc_efficiency.hpp
+│   │   ├── inc_heat_energy.hpp
+│   │   ├── inc_kinetic_energy.hpp
+│   │   └── inc_potential_energy.hpp
+│   ├── Gravity/
+│   │   └── inc_gravitational_force.hpp
+│   ├── Mechanics/
+│   │   ├── inc_acceleration.hpp
+│   │   ├── inc_avg_velocity.hpp
+│   │   ├── inc_density.hpp
+│   │   ├── inc_force.hpp
+│   │   ├── inc_hookes_law.hpp
+│   │   ├── inc_momentum.hpp
+│   │   ├── inc_power.hpp
+│   │   ├── inc_pressure.hpp
+│   │   ├── inc_torque.hpp
+│   │   ├── inc_weight.hpp
+│   │   └── inc_work.hpp
+│   ├── Rotational_Dynamics/
+│   │   ├── inc_angular_acceleration.hpp
+│   │   ├── inc_angular_velocity.hpp
+│   │   └── inc_rotational_energy.hpp
+│   └── Waves/
+│       ├── inc_frequency.hpp
+│       ├── inc_period.hpp
+│       └── inc_wave_speed.hpp
 ├── LICENSE
 ├── README.md
+├── src/
+│   └── main.cpp
 └── TODO.md
 ```
 
