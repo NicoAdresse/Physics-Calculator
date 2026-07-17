@@ -31,6 +31,8 @@
 #include "Gravity/inc_gravitational_force.hpp"
 
 #include "Rotational_Dynamics/inc_rotational_energy.hpp"
+#include "Rotational_Dynamics/inc_angular_velocity.hpp"
+#include "Rotational_Dynamics/inc_angular_acceleration.hpp"
 
 int main()
 {
@@ -63,6 +65,8 @@ int main()
     Physics::Gravity::GravitationalForce grf;
 
     Physics::RotationalDynamics::RotationalEnergy ref;
+    Physics::RotationalDynamics::AngularVelocity anvf;
+    Physics::RotationalDynamics::AngularAcceleration anaf;
 
 
     std::println("=== Mechanics ===\n");
@@ -133,6 +137,8 @@ int main()
     std::println("\n=== Rotational Dynamics ===");
 
     ref.calculateRotationalEnergy(10.0, 3.5599, true);
+    anvf.calculateAngularVelocity(3.66, 9.99, true);
+    anaf.calculateAngularAcceleration(10.0, 3.0, 8.88, true);
 
     std::println("\n=== Experimental ===");
 

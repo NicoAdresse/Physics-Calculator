@@ -126,10 +126,10 @@ Rotational Dynamics
 
         rotational energy = 0.5 * moment of inertia * angular velocity^2
 
-    Angular velocity (PENDING)
+    Angular velocity (DONE)
 
         angular velocity = angle / time
 
-    Angular acceleration (PENDING)
+    Angular acceleration (DINE)
 
         angular acceleration = angular velocity change / time
