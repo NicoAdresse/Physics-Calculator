@@ -8,7 +8,7 @@ This is a hobby project. It was meant for me to practice my handling of codebase
 
 Take everything here with a grain of salt.
 
-Current Version: v1.0.6
+Current Version: v1.0.7
 
 Every class is wrapped in the namespace of their domain.
 

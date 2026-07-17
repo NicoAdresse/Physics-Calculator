@@ -28,6 +28,10 @@
 #include "Waves/inc_frequency.hpp"
 #include "Waves/inc_period.hpp"
 
+#include "Gravity/inc_gravitational_force.hpp"
+
+#include "Rotational_Dynamics/inc_rotational_energy.hpp"
+
 int main()
 {
     Physics::Mechanics::Density df;
@@ -55,6 +59,11 @@ int main()
     Physics::Waves::WaveSpeed wsf;
     Physics::Waves::Frequency frf;
     Physics::Waves::Period perf;
+
+    Physics::Gravity::GravitationalForce grf;
+
+    Physics::RotationalDynamics::RotationalEnergy ref;
+
 
     std::println("=== Mechanics ===\n");
 
@@ -116,6 +125,14 @@ int main()
     wsf.calculateWaveSpeed(3.4, 2.5, true);
     frf.calculateFrequency(4.3, true);
     perf.calculatePeriod(9.2, true);
+
+    std::println("\n=== Gravity ===");
+
+    grf.calculateGravitationalForce(10.0, 5.0, 2.0, 4.5, true);
+
+    std::println("\n=== Rotational Dynamics ===");
+
+    ref.calculateRotationalEnergy(10.0, 3.5599, true);
 
     std::println("\n=== Experimental ===");
 

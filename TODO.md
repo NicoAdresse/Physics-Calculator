@@ -116,13 +116,13 @@ Waves & Oscillations
 
 Gravity
 
-    Gravitational force (PENDING)
+    Gravitational force (DONE)
 
         gravity force = constant * mass1 * mass2 / distance^2
 
 Rotational Dynamics
 
-    Kinetic energy (rotation) (PENDING)
+    Rotational Energy (rotation) (DONE)
 
         rotational energy = 0.5 * moment of inertia * angular velocity^2
 
